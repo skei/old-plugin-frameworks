@@ -1,0 +1,863 @@
+# depslib dependency file v1.0
+1490622280 source:/DATA/code/s3/build/main.cpp
+	"../plugins/template.h"
+
+1485885702 /DATA/code/s3/src/s3.h
+	"s3_config.h"
+	"common/s3_defines.h"
+	"common/s3_attributes.h"
+	"common/s3_types.h"
+	"common/s3_const.h"
+	"common/s3_enums.h"
+	"common/s3_stdlib.h"
+	"common/s3_debug.h"
+	"s3_main.h"
+	"common/s3_linux.h"
+	"common/s3_win32.h"
+
+1486128840 /DATA/code/s3/src/common/s3_defines.h
+
+1482315180 /DATA/code/s3/src/common/s3_attributes.h
+
+1482138665 /DATA/code/s3/src/common/s3_types.h
+	<stdint.h>
+	"common/s3_attributes.h"
+
+1485452979 /DATA/code/s3/src/common/s3_const.h
+
+1485890247 /DATA/code/s3/src/plugin/s3_plugin_base.h
+	"common/s3_array.h"
+	"common/s3_queue.h"
+	"common/s3_rect.h"
+	"plugin/s3_parameter.h"
+	"plugin/s3_program.h"
+
+1483177548 /DATA/code/s3/src/common/s3_main.h
+	"extern/vst/aeffect.h"
+	"extern/vst/aeffectx.h"
+
+1440689074 /DATA/code/s3/src/extern/vst/aeffect.h
+	<string.h>
+	<stdint.h>
+
+1440689074 /DATA/code/s3/src/extern/vst/aeffectx.h
+	"aeffect.h"
+
+1482139484 /DATA/code/s3/src/common/s3_debug.h
+	"common/debug/s3_debug_console.h"
+	"common/debug/s3_debug_logfile.h"
+	"common/debug/s3_debug_socket.h"
+	"common/debug/s3_debug_window.h"
+	"common/debug/s3_debug_trace.h"
+	"common/debug/s3_debug_memtrace.h"
+	"common/debug/s3_debug_assert.h"
+	"common/debug/s3_debug_callstack.h"
+	"common/debug/s3_debug_crashhandler.h"
+	"common/debug/s3_debug_xlib.h"
+	"common/debug/s3_debug_gdi.h"
+
+1482141324 /DATA/code/s3/src/common/debug/s3_debug_console.h
+
+1482139730 /DATA/code/s3/src/common/debug/s3_debug_logfile.h
+	"common/s3_string_stdlib.h"
+	"common/s3_basepath.h"
+	<stdio.h>
+
+1482518312 /DATA/code/s3/src/common/debug/s3_debug_socket.h
+	<stdio.h>
+	<winsock2.h>
+	"common/s3_string_stdlib.h"
+	<sys/socket.h>
+	<sys/un.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+
+1482139823 /DATA/code/s3/src/common/debug/s3_debug_window.h
+	"gui/s3_window.h"
+	"gui/widgets/s3_widget_color.h"
+	"gui/widgets/s3_widget_textarea.h"
+
+1482141348 /DATA/code/s3/src/common/debug/s3_debug_trace.h
+	<stdarg.h>
+	<stdio.h>
+	"common/s3_convert.h"
+
+1482139747 /DATA/code/s3/src/common/debug/s3_debug_memtrace.h
+	<iostream>
+	"common/s3_utils.h"
+
+1483445842 /DATA/code/s3/src/common/debug/s3_debug_assert.h
+	<iostream>
+
+1484901457 /DATA/code/s3/src/common/debug/s3_debug_callstack.h
+	<execinfo.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<cxxabi.h>
+	<Dbghelp.h>
+
+1482139690 /DATA/code/s3/src/common/debug/s3_debug_crashhandler.h
+	<signal.h>
+
+1482139821 /DATA/code/s3/src/common/debug/s3_debug_xlib.h
+	<X11/Xlib.h>
+
+1482139706 /DATA/code/s3/src/common/debug/s3_debug_gdi.h
+
+1482247153 /DATA/code/s3/src/common/s3_string_stdlib.h
+	<string.h>
+
+1482236448 /DATA/code/s3/src/common/s3_convert.h
+	"common/s3_utils.h"
+
+1482141234 /DATA/code/s3/src/common/s3_stdlib.h
+	"common/s3_math_stdlib.h"
+	"common/s3_memory_stdlib.h"
+	"common/s3_string_stdlib.h"
+
+1482140275 /DATA/code/s3/src/common/s3_math_stdlib.h
+	<math.h>
+
+1482140159 /DATA/code/s3/src/common/s3_memory_stdlib.h
+	<stdlib.h>
+
+1482245400 /DATA/code/s3/src/common/s3_utils.h
+	<math.h>
+
+1482237277 /DATA/code/s3/src/common/s3_memory.h
+	"common/s3_stdlib.h"
+	<stdlib.h>
+	<stdio.h>
+
+1485025655 /DATA/code/s3/src/common/s3_config.h
+
+1486237376 /DATA/code/s3/src/common/s3_enums.h
+
+1482158145 /DATA/code/s3/src/common/s3_global.h
+
+1485452919 /DATA/code/s3/src/common/s3_array.h
+
+1486328699 /DATA/code/s3/src/common/s3_color.h
+	<math.h>
+	"common/s3_math.h"
+
+1483883734 /DATA/code/s3/src/common/s3_math.h
+	<math.h>
+	<stdlib.h>
+	"common/s3_math_fast.h"
+	"common/s3_utils.h"
+
+1485024780 /DATA/code/s3/src/common/s3_math_fast.h
+	<math.h>
+
+1485215597 /DATA/code/s3/src/common/s3_queue.h
+
+1486239916 /DATA/code/s3/src/common/s3_rect.h
+	"common/s3_point.h"
+	"common/s3_point.h"
+
+1482237481 /DATA/code/s3/src/common/s3_point.h
+
+1482244785 /DATA/code/s3/src/common/s3_sort.h
+
+1482244981 /DATA/code/s3/src/common/s3_stack.h
+
+1483877145 /DATA/code/s3/src/common/s3_string.h
+	<stdarg.h>
+	"common/s3_array.h"
+	"common/s3_convert.h"
+
+1486112762 /DATA/code/s3/src/plugin/s3_plugin.h
+	"plugin/s3_plugin_exe.h"
+	"plugin/s3_plugin_vst.h"
+	"common/s3_thread.h"
+
+1486112709 /DATA/code/s3/src/plugin/s3_plugin_exe.h
+	"plugin/s3_plugin_base.h"
+
+1486417576 /DATA/code/s3/src/plugin/s3_plugin_vst.h
+	"plugin/s3_plugin_base.h"
+	"extern/vst/aeffectx.h"
+	"plugin/s3_plugin_vst_dispatcher_opcodes.h"
+
+1485215965 /DATA/code/s3/src/plugin/s3_parameter.h
+	"common/s3_array.h"
+	"common/s3_convert.h"
+	"common/s3_math.h"
+
+1482835881 /DATA/code/s3/src/plugin/s3_plugin_vst_dispatcher_opcodes.h
+
+1485033558 /DATA/code/s3/src/plugin/s3_program.h
+	"common/s3_array.h"
+
+1483659197 /DATA/code/s3/src/common/s3_time.h
+	<sys/time.h>
+	<unistd.h>
+
+1484346346 /DATA/code/s3/src/audio/s3_ladspa.h
+	<dlfcn.h>
+	"common/s3_library.h"
+	"common/s3_memory_stdlib.h"
+	"extern/ladspa/ladspa.h"
+
+1028754912 /DATA/code/s3/src/extern/ladspa/ladspa.h
+
+1483661746 /DATA/code/s3/src/common/s3_thread.h
+	<pthread.h>
+	<windows.h>
+	"common/s3_time.h"
+
+1483507158 /DATA/code/s3/src/common/s3_lock.h
+
+1483779176 /DATA/code/s3/src/common/s3_parser.h
+	"common/s3_array.h"
+	"common/s3_memory_stdlib.h"
+
+1484858126 /DATA/code/s3/src/audio/s3_audio_utils.h
+	"common/s3_memory_stdlib.h"
+
+1483738583 /DATA/code/s3/src/common/s3_integer.h
+	<math.h>
+
+1482237324 /DATA/code/s3/src/common/s3_paths.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<dlfcn.h>
+	<Shlobj.h>
+	<dlfcn.h>
+	<unistd.h>
+
+1484074271 /DATA/code/s3/plugins/ladspa_wrapper.h
+	"s3.h"
+	"audio/s3_audio_utils.h"
+	"audio/s3_ladspa.h"
+	"common/s3_file.h"
+	"common/s3_integer.h"
+	"common/s3_parser.h"
+	"common/s3_paths.h"
+	"plugin/s3_plugin.h"
+
+1483741505 /DATA/code/s3/test/test_inifile.h
+	"s3.h"
+	"common/s3_inifile.h"
+
+1483743534 /DATA/code/s3/src/common/s3_inifile.h
+	"common/s3_file.h"
+	"common/s3_parser.h"
+	"common/s3_paths.h"
+
+1483742640 /DATA/code/s3/src/common/s3_file.h
+	<stdio.h>
+	<stdio.h>
+	"s3_basepath.h"
+	"s3_const.h"
+	"s3_memory.h"
+	"s3_string.h"
+	"s3_utils.h"
+
+1483887471 /DATA/code/s3/plugins/curve_shaper.h
+	"s3.h"
+	"common/s3_math.h"
+	"plugin/s3_plugin.h"
+
+1483913732 /DATA/code/s3/tools/ladspa_setup.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+	<math.h>
+	<dlfcn.h>
+	<dirent.h>
+	"../src/extern/ladspa/ladspa.h"
+
+1483998574 /DATA/code/s3/test/test_dssi.h
+	"s3.h"
+	"audio/s3_dssi.h"
+
+1484348695 /DATA/code/s3/src/audio/s3_dssi.h
+	"audio/s3_ladspa.h"
+	"common/s3_array.h"
+	"extern/dssi/dssi.h"
+
+1483894399 /DATA/code/s3/src/extern/dssi/dssi.h
+	<ladspa.h>
+	<alsa/seq_event.h>
+
+1484349402 /DATA/code/s3/plugins/dssi_wrapper.h
+	"s3.h"
+	"audio/s3_audio_utils.h"
+	"audio/s3_dssi.h"
+	"common/s3_file.h"
+	"common/s3_integer.h"
+	"common/s3_parser.h"
+	"common/s3_paths.h"
+	"plugin/s3_plugin.h"
+
+1484053022 /DATA/code/s3/test/test_lib.h
+	"s3.h"
+	"common/s3_library.h"
+	"audio/s3_ladspa2.h"
+	"audio/s3_dssi2.h"
+
+1484346258 /DATA/code/s3/src/common/s3_library.h
+	<dlfcn.h>
+
+1484071067 /DATA/code/s3/src/audio/s3_ladspa2.h
+	<dlfcn.h>
+	"common/s3_library.h"
+	"common/s3_memory_stdlib.h"
+	"extern/ladspa/ladspa.h"
+
+1484071876 /DATA/code/s3/src/audio/s3_dssi2.h
+	"audio/s3_ladspa2.h"
+	"extern/dssi/dssi.h"
+
+1484071497 /DATA/code/s3/plugins/ladspa_wrapper2.h
+	"s3.h"
+	"audio/s3_audio_utils.h"
+	"audio/s3_ladspa2.h"
+	"common/s3_file.h"
+	"common/s3_integer.h"
+	"common/s3_parser.h"
+	"common/s3_paths.h"
+	"plugin/s3_plugin.h"
+
+1484071931 /DATA/code/s3/plugins/dssi_wrapper2.h
+	"s3.h"
+	"audio/s3_audio_utils.h"
+	"audio/s3_dssi2.h"
+	"common/s3_file.h"
+	"common/s3_integer.h"
+	"common/s3_parser.h"
+	"common/s3_paths.h"
+	"plugin/s3_plugin.h"
+
+1484212251 /DATA/code/s3/tools/dssi_test.h
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<math.h>
+	<alsa/seq_event.h>
+	"s3.h"
+
+1484392909 /DATA/code/s3/plugins/sonic_maximizer.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+
+1484425163 /DATA/code/s3/plugins/fibonacci.h
+	"s3.h"
+	"audio/s3_audio_utils.h"
+	"plugin/s3_plugin.h"
+
+1484514175 /DATA/code/s3/plugins/frac_delay.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+
+1484517947 /DATA/code/s3/plugins/stutter.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+
+1484519827 /DATA/code/s3/plugins/grains.h
+	"s3.h"
+	"common/s3_random.h"
+	"plugin/s3_plugin.h"
+
+1482242450 /DATA/code/s3/src/common/s3_random.h
+	<stdlib.h>
+	<stdint.h>
+	<stdint.h>
+	<stdint.h>
+
+1484569522 /DATA/code/s3/plugins/hall_reverb.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+
+1484569713 /DATA/code/s3/plugins/saturation.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+
+1484570646 /DATA/code/s3/plugins/jack.h
+	<jack/jack.h>
+	"s3.h"
+	"plugin/s3_plugin.h"
+	"common/s3_random.h"
+
+1484679013 /DATA/code/s3/plugins/gpl/fx_cabinet.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+	"plugin/s3_plugin_id.h"
+
+1484757937 /DATA/code/s3/src/plugin/s3_plugin_id.h
+
+1490622291 /DATA/code/s3/plugins/template.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+
+1484736845 /DATA/code/s3/plugins/fx_blur.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+	"plugin/s3_plugin_id.h"
+
+1484737546 /DATA/code/s3/plugins/fx_dist3.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+	"plugin/s3_plugin_id.h"
+
+1484759118 /DATA/code/s3/plugins/fx_tempo_delay.h
+	"s3.h"
+	"plugin/s3_plugin.h"
+	"plugin/s3_plugin_id.h"
+
+1485889513 /DATA/code/s3/test/test_gui.h
+	"s3.h"
+	"gui/s3_window.h"
+	"gui/widgets/s3_widget_color.h"
+	"gui/widgets/s3_widget_slider.h"
+
+1485022733 /DATA/code/s3/src/s3_main.h
+	"extern/vst/aeffect.h"
+	"extern/vst/aeffectx.h"
+
+1484860144 /DATA/code/s3/plugins/midi_fibonacci.h
+	"s3.h"
+	"audio/s3_audio_utils.h"
+	"plugin/s3_plugin.h"
+	"plugin/s3_plugin_id.h"
+
+1485975626 /DATA/code/s3/src/s3_config.h
+
+1486474394 /DATA/code/s3/src/gui/s3_window.h
+	"gui/s3_window_xlib.h"
+	"gui/s3_painter.h"
+	"gui/s3_surface.h"
+	"gui/s3_widget.h"
+
+1485974182 /DATA/code/s3/src/gui/linux/s3_window_xlib.h
+	"common/s3_rect.h"
+	"gui/base/s3_window_base.h"
+	"gui/s3_drawable.h"
+	"gui/s3_widget.h"
+	"gui/s3_window_listener.h"
+	"common/s3_utils.h"
+
+1485884531 /DATA/code/s3/src/gui/base/s3_window_base.h
+	"gui/s3_window_listener.h"
+	"gui/s3_painter.h"
+
+1485884531 /DATA/code/s3/src/gui/s3_window_listener.h
+
+1486328242 /DATA/code/s3/src/gui/s3_painter.h
+	"gui/s3_painter_cairo.h"
+	"gui/s3_painter_xlib.h"
+	"common/s3_point.h"
+	"common/s3_rect.h"
+	"common/s3_stack.h"
+
+1485884627 /DATA/code/s3/src/common/s3_edges.h
+
+1485884530 /DATA/code/s3/src/gui/linux/s3_painter_xlib.h
+	"common/s3_stack.h"
+	"common/s3_rect.h"
+	"gui/base/s3_painter_base.h"
+	"gui/s3_drawable.h"
+	"gui/s3_pen.h"
+	"gui/s3_brush.h"
+	"gui/s3_font.h"
+	"gui/s3_surface.h"
+	"gui/s3_image.h"
+
+1485884530 /DATA/code/s3/src/gui/base/s3_painter_base.h
+	"gui/s3_pen.h"
+	"gui/s3_brush.h"
+	"gui/s3_font.h"
+
+1485884532 /DATA/code/s3/src/gui/s3_pen.h
+	"gui/linux/s3_pen_xlib.h"
+	"gui/win32/s3_pen_gdi.h"
+
+1485884530 /DATA/code/s3/src/gui/linux/s3_pen_xlib.h
+	"gui/base/s3_pen_base.h"
+
+1485884531 /DATA/code/s3/src/gui/base/s3_pen_base.h
+	"common/s3_color.h"
+
+1485884530 /DATA/code/s3/src/gui/win32/s3_pen_gdi.h
+	"gui/base/s3_pen_base.h"
+
+1485884531 /DATA/code/s3/src/gui/s3_brush.h
+	"gui/linux/s3_brush_xlib.h"
+	"gui/win32/s3_brush_gdi.h"
+
+1485884531 /DATA/code/s3/src/gui/linux/s3_brush_xlib.h
+	"gui/base/s3_brush_base.h"
+
+1485884411 /DATA/code/s3/src/gui/base/s3_brush_base.h
+	"gui/s3_image.h"
+	"gui/s3_surface.h"
+
+1486330537 /DATA/code/s3/src/gui/s3_image.h
+	"gui/s3_image_cairo.h"
+	"gui/s3_image_xlib.h"
+
+1485884530 /DATA/code/s3/src/gui/linux/s3_image_xlib.h
+	"gui/base/s3_image_base.h"
+	"gfx/s3_bitmap.h"
+	"gui/s3_drawable.h"
+
+1485884531 /DATA/code/s3/src/gui/base/s3_image_base.h
+	"gui/s3_drawable.h"
+
+1486323099 /DATA/code/s3/src/gui/s3_drawable.h
+	<cairo/cairo.h>
+	<cairo/cairo-xlib.h>
+
+1485975673 /DATA/code/s3/src/gfx/s3_bitmap.h
+	"extern/upng/upng.c.h"
+	"common/s3_color.h"
+	"common/s3_rect.h"
+	"s3_bresenham.h"
+
+1478533876 /DATA/code/s3/src/extern/upng/upng.c.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	"upng.h"
+
+1478533876 /DATA/code/s3/src/extern/upng/upng.h
+
+1485884872 /DATA/code/s3/src/gfx/s3_bresenham.h
+
+1485884530 /DATA/code/s3/src/gui/win32/s3_image_gdi.h
+	"common/s3_memory_stdlib.h"
+	"gui/base/s3_image_base.h"
+	"gfx/s3_bitmap.h"
+	"gui/s3_drawable.h"
+
+1486112878 /DATA/code/s3/src/gui/s3_surface.h
+	"gui/s3_surface_cairo.h"
+	"gui/s3_surface_xlib.h"
+
+1485884531 /DATA/code/s3/src/gui/linux/s3_surface_xlib.h
+	"gui/base/s3_surface_base.h"
+	"gui/s3_drawable.h"
+
+1485884530 /DATA/code/s3/src/gui/base/s3_surface_base.h
+
+1485884530 /DATA/code/s3/src/gui/win32/s3_surface_gdi.h
+	"gui/base/s3_surface_base.h"
+	"gui/s3_drawable.h"
+
+1485884531 /DATA/code/s3/src/gui/win32/s3_brush_gdi.h
+	"gui/base/s3_brush_base.h"
+
+1485884530 /DATA/code/s3/src/gui/s3_font.h
+	"gui/base/s3_font_base.h"
+	"gui/linux/s3_font_xft.h"
+	"gui/win32/s3_font_gdi.h"
+
+1485884532 /DATA/code/s3/src/gui/base/s3_font_base.h
+	"gui/s3_drawable.h"
+
+1485884530 /DATA/code/s3/src/gui/linux/s3_font_xft.h
+	"common/s3_convert.h"
+	"gui/base/s3_font_base.h"
+
+1485884530 /DATA/code/s3/src/gui/win32/s3_font_gdi.h
+	"gui/base/s3_font_base.h"
+
+1485884532 /DATA/code/s3/src/gui/win32/s3_painter_gdi.h
+	"common/s3_stack.h"
+	"common/s3_rect.h"
+	"gui/base/s3_painter_base.h"
+	"gui/s3_drawable.h"
+	"gui/s3_pen.h"
+	"gui/s3_brush.h"
+	"gui/s3_font.h"
+	"gui/s3_surface.h"
+	"gui/s3_image.h"
+
+1486378523 /DATA/code/s3/src/gui/s3_widget.h
+	"common/s3_array.h"
+	"common/s3_edges.h"
+	"common/s3_rect.h"
+	"gui/s3_painter.h"
+
+1485884530 /DATA/code/s3/src/gui/s3_widget_listener.h
+	"gui/s3_painter.h"
+
+1485884531 /DATA/code/s3/src/gui/s3_skin.h
+
+1485884531 /DATA/code/s3/src/gui/win32/s3_window_win32.h
+	"common/s3_rect.h"
+	"common/s3_utils.h"
+	"gui/base/s3_window_base.h"
+	"gui/s3_widget.h"
+	"gui/s3_window_listener.h"
+
+1486378959 /DATA/code/s3/src/gui/widgets/s3_widget_color.h
+	"common/s3_color.h"
+	"common/s3_rect.h"
+	"gui/s3_painter.h"
+	"gui/s3_widget.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_textarea.h
+	"common/s3_lock.h"
+	"common/s3_string.h"
+	"gui/s3_widget.h"
+	"gui/widgets/s3_widget_color.h"
+	"gui/widgets/s3_widget_scrollbar.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_scrollbar.h
+	"gui/s3_widget.h"
+
+1486110871 /DATA/code/s3/src/common/s3_linux.h
+	<pthread.h>
+	"common/s3_xlib.h"
+	"common/s3_xrender.h"
+	"common/s3_xft.h"
+	<time.h>
+
+1486230705 /DATA/code/s3/src/common/s3_xlib.h
+	<X11/X.h>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/cursorfont.h>
+
+1486469025 /DATA/code/s3/src/common/s3_xrender.h
+	"common/s3_color.h"
+	<X11/extensions/Xrender.h>
+
+1485885742 /DATA/code/s3/src/common/s3_xft.h
+	<X11/Xft/Xft.h>
+
+1485982315 /DATA/code/s3/src/common/s3_win32.h
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_slider.h
+	"gui/widgets/s3_widget_dragvalue.h"
+
+1486414954 /DATA/code/s3/src/gui/widgets/s3_widget_dragvalue.h
+	"gui/s3_widget.h"
+	"plugin/s3_parameter.h"
+
+1486472235 /DATA/code/s3/test/gui/test_gui.h
+	"s3.h"
+	"gfx/s3_bitmap.h"
+	"gui/s3_image.h"
+	"gui/s3_surface.h"
+	"gui/s3_painter.h"
+	"gui/s3_window.h"
+	"gui/widgets/s3_widgets.h"
+
+1486473985 /DATA/code/s3/src/gui/s3_window_xlib.h
+	"common/s3_rect.h"
+	"gui/s3_drawable.h"
+	"gui/s3_widget.h"
+	"gui/s3_window_base.h"
+
+1486230825 /DATA/code/s3/src/gui/s3_window_base.h
+	"gui/s3_surface.h"
+	"gui/s3_widget.h"
+
+1486476577 /DATA/code/s3/src/gui/s3_surface_xlib.h
+	"gui/s3_drawable.h"
+	"gui/s3_surface_base.h"
+
+1486248459 /DATA/code/s3/src/gui/s3_surface_base.h
+	"gui/s3_drawable.h"
+
+1486466775 /DATA/code/s3/src/gui/s3_painter_xlib.h
+	"common/s3_color.h"
+	"gui/s3_drawable.h"
+	"gui/s3_painter_base.h"
+
+1486326004 /DATA/code/s3/src/gui/s3_painter_base.h
+	"common/s3_point.h"
+	"common/s3_rect.h"
+
+1486476507 /DATA/code/s3/src/gui/s3_surface_cairo.h
+	<cairo/cairo.h>
+	<cairo/cairo-xlib.h>
+	"gui/s3_surface_xlib.h"
+
+1486388330 /DATA/code/s3/src/gui/s3_painter_cairo.h
+	<cairo/cairo.h>
+	<cairo/cairo-xlib.h>
+	"common/s3_point.h"
+	"common/s3_rect.h"
+	"gui/s3_painter_xlib.h"
+
+1486311168 /DATA/code/s3/src/gui/s3_image_xlib.h
+	"gui/s3_image_base.h"
+	"gfx/s3_bitmap.h"
+	"gui/s3_drawable.h"
+
+1486290795 /DATA/code/s3/src/gui/s3_image_base.h
+	"gui/s3_drawable.h"
+
+1486292209 /DATA/code/s3/src/common/s3_dialogs.h
+	<windows.h>
+	<commdlg.h>
+
+1486292280 /DATA/code/s3/src/gui/s3_tilemap.h
+	"common/s3_rect.h"
+	"gui/s3_drawable.h"
+
+1486340907 /DATA/code/s3/src/gui/s3_image_cairo.h
+	"gui/s3_image_base.h"
+	"gfx/s3_bitmap.h"
+	"gui/s3_drawable.h"
+
+1486414808 /DATA/code/s3/src/gui/widgets/s3_widgets.h
+	"gui/widgets/s3_widget_color.h"
+	"gui/widgets/s3_widget_dragvalue.h"
+	"gui/widgets/s3_widget_number.h"
+	"gui/widgets/s3_widget_string.h"
+	"gui/widgets/s3_widget_text.h"
+	"gui/widgets/s3_widget_value.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_agg.h
+	"s3_color.h"
+	"s3_widget.h"
+	"extern/agg2_lite/agg.h"
+	"extern/agg2_lite/agg.cpp.h"
+	"s3_painter_agg.h"
+	"s3_surface_agg.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_bitmap.h
+	"gui/s3_drawable.h"
+	"gui/s3_widget.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_button.h
+	"gui/s3_widget.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_buttonrow.h
+	"common/s3_convert.h"
+	"gui/widgets/s3_widget_grid.h"
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_grid.h
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_circular_waveform.h
+	"common/s3_integer.h"
+	"gui/s3_widget.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_graph.h
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_group.h
+	"gui/s3_widget.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_groupbox.h
+	"gui/s3_widget.h"
+	"gui/widgets/s3_widget_switch.h"
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_switch.h
+	"gui/s3_widget.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_imagestrip.h
+	"common/s3_integer.h"
+	"gui/s3_tilemap.h"
+	"gui/widgets/s3_widget_dragvalue.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_imgknob.h
+	"common/s3_integer.h"
+	"gui/widgets/s3_widget_knob.h"
+	"gui/s3_tilemap.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_knob.h
+	"gui/widgets/s3_widget_dragvalue.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_keyboard.h
+	"gui/s3_widget.h"
+
+1478533876 /DATA/code/s3/src/gui/widgets/s3_widget_knob2.h
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_menu.h
+	"gui/widgets/s3_widget_menuitem.h"
+	"gui/widgets/s3_widget_color.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_menuitem.h
+	"gui/widgets/s3_widget_text.h"
+
+1486414634 /DATA/code/s3/src/gui/widgets/s3_widget_text.h
+	"gui/s3_widget.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_modmatrix.h
+	"gui/s3_widget.h"
+	"gui/widgets/s3_widget_dragvalue.h"
+	"gui/widgets/s3_widget_selector.h"
+	"audio/s3_modulation_matrix.h"
+	"gui/s3_painter.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_selector.h
+	"common/s3_integer.h"
+	"gui/widgets/s3_widget_button.h"
+	"gui/widgets/s3_widget_menu.h"
+	"gui/widgets/s3_widget_menuitem.h"
+	"gui/widgets/s3_widget_symbol.h"
+
+1485884529 /DATA/code/s3/src/gui/widgets/s3_widget_symbol.h
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_nodes.h
+	"common/s3_random.h"
+	"gui/s3_widget.h"
+
+1486414710 /DATA/code/s3/src/gui/widgets/s3_widget_number.h
+	"common/s3_convert.h"
+	"gui/s3_widget.h"
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_overlay.h
+	"gui/s3_widget.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_pages.h
+	"gui/s3_widget.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_panel.h
+	"common/s3_color.h"
+	"common/s3_rect.h"
+	"gui/s3_painter.h"
+	"gui/s3_widget.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_plot.h
+	"gui/s3_painter.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_popup.h
+	"gui/widgets/s3_widget_color.h"
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_scrollbox.h
+	"gui/s3_widget.h"
+	"gui/widgets/s3_widget_scrollbar.h"
+
+1485884529 /DATA/code/s3/src/gui/widgets/s3_widget_sizer.h
+	"gui/s3_widget.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_sliderbank.h
+	"common/s3_random.h"
+	"gui/s3_widget.h"
+
+1486414740 /DATA/code/s3/src/gui/widgets/s3_widget_string.h
+	"common/s3_string.h"
+	"gui/s3_widget.h"
+
+1485884531 /DATA/code/s3/src/gui/widgets/s3_widget_tabs.h
+	"gui/s3_widget.h"
+	"gui/widgets/s3_widget_buttonrow.h"
+	"gui/widgets/s3_widget_pages.h"
+
+1485884530 /DATA/code/s3/src/gui/widgets/s3_widget_textedit.h
+	"gui/s3_widget.h"
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_timeline.h
+	"audio/s3_timeline.h"
+	"gui/s3_widget.h"
+	"audio/s3_timeline.h"
+
+1478533876 /DATA/code/s3/src/gui/widgets/s3_widget_value.h
+
+1485884532 /DATA/code/s3/src/gui/widgets/s3_widget_waveform.h
+	"common/s3_color.h"
+	"gui/s3_widget.h"
+

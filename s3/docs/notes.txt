@@ -1,0 +1,100 @@
+
+/s3
+  - what is it
+  
+  /code
+    - gcc, c++11 (non-modern, 'naive')
+        - (multiple) inheritance
+        - templates
+        - function pointers
+        - (typecasting) void* pointers
+        - global variables
+    - headers only
+    - cross platform
+    - cross format
+    - base, implementation, mainclass
+    - on_*, do_*
+    
+  /common
+    - types
+    - containers
+    - utils
+    - wrappers, abstractions
+    - stdlib
+      /debug
+        - trace: stdout, console, logfile, socket
+        - memtrace
+        - assert
+        - callstack, crashhandler
+        - xlib, gdi
+        - window
+    
+  /plugin
+    - host loading dll/so, entrypoint
+    - instance [plugin]
+    - parameter
+    - processing
+    - midi
+    - host
+    
+  /gui
+    /widgets
+      - window
+          - os/system window
+          - embedded
+          - painting (window/buffer), invalidate
+          - timer, cursor, ..
+      - surface
+          - xlib, xrender, cairo
+      - image
+          - drawable
+          - painter
+      - widget
+          - hierarchy, events (on/do)
+          - alignment, layout
+          - capture, hover, modal, wantkeys
+
+  /gfx
+    - bitmap
+    - bresenham
+    - outline
+  
+  /audio
+    /filters
+    /waveforms
+    /effects    
+  
+
+
+
+
+----------------------------------------------------------------------
+assumptions:
+----------------------------------------------------------------------
+
+* (aligned) 32-bit reads/writes are atomic
+
+* midi events are delivered to the plugin inbetween audio blocks..
+  events are time-stamped (in samples) relative to audio block start
+* midi events are sorted by offset
+  
+* setParameter can be called from multiple threads
+  for example, from a gui
+  
+----------------------------------------------------------------------
+possible problems:
+----------------------------------------------------------------------
+
+* parameter queues needs to be read and emptied at the beginning of
+  processReplacing(), or else the queues might fill up..
+  there might be problems if the host just stops calling process
+  without telling us.. bitwig stops when deactivating a plugin, reaper
+  stops if we press pause..
+  
+----------------------------------------------------------------------
+
+* global variables
+  - debugging
+  - hinstance - needed from DllMain to plugin->main()
+
+

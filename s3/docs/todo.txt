@@ -1,0 +1,61 @@
+
+----------------------------------------------------------------------
+c++
+----------------------------------------------------------------------
+
+* volatile
+  https://www.kvraudio.com/forum/viewtopic.php?p=4710467#p4710467
+  MHostParamValues ??
+
+----------------------------------------------------------------------
+parameters
+----------------------------------------------------------------------
+
+* smoothing/dezipping
+
+* additional array of bools MParamChanged
+  bool MParamChanged[S3_MAX_PARAMS];
+  bitfield? ((num_parameters/32)+1) uint32's
+  process:
+  - clear all
+  - create param_changed bitfields/array first
+  clear all
+  ..
+  
+  or..
+  
+  we can have
+    void on_parameterPostUpdate(S3_Bitfield* MChanged)
+  and delay some actions until this.. filter coefficients..
+  set new_freq, new_res individually in on_parameterUpdate, bot not
+  calculate coefficients.. then in on_parameterPostUpdate, calculate
+  coeffs etc, if needed (check 'changed' bitfield)
+
+* setParameter..
+
+  #ifdef S3_PLUGIN_NO_CACHE_PARAMS
+    on_parameterUpdate(index,value);
+  #else
+  .. (queue, values..)
+  #endif
+
+----------------------------------------------------------------------
+plugin
+----------------------------------------------------------------------
+
+* vst: chunks
+
+* numSamplesUntilNextEvent()
+
+* reset process/editor-queues in resume?
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+* cairo
+
+  - image from png
+
+----------------------------------------------------------------------
+

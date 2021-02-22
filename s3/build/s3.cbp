@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="s3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="exe debug 64">
+				<Option output="../bin/s3_64_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-Bsymbolic" />
+					<Add option="-export-dynamic" />
+					<Add option="-DS3_PLUGIN_EXE" />
+					<Add option="-DS3_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="exe release 64">
+				<Option output="../bin/s3_64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m64" />
+					<Add option="-DS3_PLUGIN_EXE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="vst debug 64">
+				<Option output="../bin/s3_64_debug" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option host_application="jost" />
+				<Option run_host_application_in_terminal="1" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add option="-rdynamic" />
+					<Add option="-Wl,-Bsymbolic" />
+					<Add option="-DS3_PLUGIN_VST" />
+					<Add option="-DS3_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="vst release 64">
+				<Option output="../bin/s3_64" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m64" />
+					<Add option="-fPIC" />
+					<Add option="-DS3_PLUGIN_VST" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+				</Linker>
+			</Target>
+			<Target title="exe debug 32">
+				<Option output="../bin/s3_32_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-g" />
+					<Add option="-Bsymbolic" />
+					<Add option="-export-dynamic" />
+					<Add option="-DS3_PLUGIN_EXE" />
+					<Add option="-DS3_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="exe release 32">
+				<Option output="../bin/s3_32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m32" />
+					<Add option="-DS3_PLUGIN_EXE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="vst debug 32">
+				<Option output="../bin/s3_32_debug" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add option="-rdynamic" />
+					<Add option="-Wl,-Bsymbolic" />
+					<Add option="-DS3_PLUGIN_VST" />
+					<Add option="-DS3_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="vst release 32">
+				<Option output="../bin/s3_32" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="0" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m32" />
+					<Add option="-fPIC" />
+					<Add option="-DS3_PLUGIN_VST" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-fvisibility=hidden" />
+			<Add directory="../src" />
+			<Add directory="/usr/include/freetype2" />
+		</Compiler>
+		<Linker>
+			<Add library="pthread" />
+			<Add library="dl" />
+			<Add library="X11" />
+			<Add library="Xrender" />
+			<Add library="Xft" />
+			<Add library="cairo" />
+		</Linker>
+		<Unit filename="../docs/about.txt" />
+		<Unit filename="../docs/notes.txt" />
+		<Unit filename="../docs/todo.txt" />
+		<Unit filename="../plugins/fx_curve_shaper.h" />
+		<Unit filename="../plugins/fx_event_horizon.h" />
+		<Unit filename="../plugins/fx_frac_delay.h" />
+		<Unit filename="../plugins/fx_freeze.h" />
+		<Unit filename="../plugins/fx_grains.h" />
+		<Unit filename="../plugins/fx_hall_reverb.h" />
+		<Unit filename="../plugins/fx_pitch_shifter.h" />
+		<Unit filename="../plugins/fx_saturation.h" />
+		<Unit filename="../plugins/fx_simpverb.h" />
+		<Unit filename="../plugins/fx_sonic_maximizer.h" />
+		<Unit filename="../plugins/fx_stutter.h" />
+		<Unit filename="../plugins/gpl/fx_cabinet.h" />
+		<Unit filename="../plugins/midi_fibonacci.h" />
+		<Unit filename="../plugins/wrap_dssi.h" />
+		<Unit filename="../plugins/wrap_jack.h" />
+		<Unit filename="../plugins/wrap_ladspa.h" />
+		<Unit filename="../src/audio/s3_audio_utils.h" />
+		<Unit filename="../src/audio/s3_dssi.h" />
+		<Unit filename="../src/audio/s3_ladspa.h" />
+		<Unit filename="../src/common/debug/s3_debug_assert.h" />
+		<Unit filename="../src/common/debug/s3_debug_callstack.h" />
+		<Unit filename="../src/common/debug/s3_debug_console.h" />
+		<Unit filename="../src/common/debug/s3_debug_crashhandler.h" />
+		<Unit filename="../src/common/debug/s3_debug_gdi.h" />
+		<Unit filename="../src/common/debug/s3_debug_logfile.h" />
+		<Unit filename="../src/common/debug/s3_debug_memtrace.h" />
+		<Unit filename="../src/common/debug/s3_debug_socket.h" />
+		<Unit filename="../src/common/debug/s3_debug_trace.h" />
+		<Unit filename="../src/common/debug/s3_debug_window.h" />
+		<Unit filename="../src/common/debug/s3_debug_xlib.h" />
+		<Unit filename="../src/common/s3_array.h" />
+		<Unit filename="../src/common/s3_atomic.h" />
+		<Unit filename="../src/common/s3_attributes.h" />
+		<Unit filename="../src/common/s3_bitfield.h" />
+		<Unit filename="../src/common/s3_buffer.h" />
+		<Unit filename="../src/common/s3_color.h" />
+		<Unit filename="../src/common/s3_complex.h" />
+		<Unit filename="../src/common/s3_const.h" />
+		<Unit filename="../src/common/s3_convert.h" />
+		<Unit filename="../src/common/s3_cpu.h" />
+		<Unit filename="../src/common/s3_debug.h" />
+		<Unit filename="../src/common/s3_defines.h" />
+		<Unit filename="../src/common/s3_dialogs.h" />
+		<Unit filename="../src/common/s3_dmc.h" />
+		<Unit filename="../src/common/s3_edges.h" />
+		<Unit filename="../src/common/s3_enums.h" />
+		<Unit filename="../src/common/s3_file.h" />
+		<Unit filename="../src/common/s3_inifile.h" />
+		<Unit filename="../src/common/s3_integer.h" />
+		<Unit filename="../src/common/s3_interpolation.h" />
+		<Unit filename="../src/common/s3_isaac.h" />
+		<Unit filename="../src/common/s3_library.h" />
+		<Unit filename="../src/common/s3_linux.h" />
+		<Unit filename="../src/common/s3_list.h" />
+		<Unit filename="../src/common/s3_lock.h" />
+		<Unit filename="../src/common/s3_map.h" />
+		<Unit filename="../src/common/s3_math.h" />
+		<Unit filename="../src/common/s3_math_fast.h" />
+		<Unit filename="../src/common/s3_math_int.h" />
+		<Unit filename="../src/common/s3_math_stdlib.h" />
+		<Unit filename="../src/common/s3_memory.h" />
+		<Unit filename="../src/common/s3_memory_stdlib.h" />
+		<Unit filename="../src/common/s3_neural.h" />
+		<Unit filename="../src/common/s3_parser.h" />
+		<Unit filename="../src/common/s3_paths.h" />
+		<Unit filename="../src/common/s3_point.h" />
+		<Unit filename="../src/common/s3_queue.h" />
+		<Unit filename="../src/common/s3_random.h" />
+		<Unit filename="../src/common/s3_rect.h" />
+		<Unit filename="../src/common/s3_simd.h" />
+		<Unit filename="../src/common/s3_sort.h" />
+		<Unit filename="../src/common/s3_stack.h" />
+		<Unit filename="../src/common/s3_stdlib.h" />
+		<Unit filename="../src/common/s3_string.h" />
+		<Unit filename="../src/common/s3_string_stdlib.h" />
+		<Unit filename="../src/common/s3_thread.h" />
+		<Unit filename="../src/common/s3_time.h" />
+		<Unit filename="../src/common/s3_types.h" />
+		<Unit filename="../src/common/s3_utils.h" />
+		<Unit filename="../src/common/s3_vector.h" />
+		<Unit filename="../src/common/s3_win32.h" />
+		<Unit filename="../src/common/s3_xlib.h" />
+		<Unit filename="../src/common/s3_xrender.h" />
+		<Unit filename="../src/extern/dssi/dssi.h" />
+		<Unit filename="../src/extern/ladspa/ladspa.h" />
+		<Unit filename="../src/extern/upng/glview.c.h" />
+		<Unit filename="../src/extern/upng/png2tga.c.h" />
+		<Unit filename="../src/extern/upng/upng.c.h" />
+		<Unit filename="../src/extern/upng/upng.h" />
+		<Unit filename="../src/extern/vst/aeffect.h" />
+		<Unit filename="../src/extern/vst/aeffectx.h" />
+		<Unit filename="../src/extern/vst/vstfxstore.h" />
+		<Unit filename="../src/gfx/s3_bitmap.h" />
+		<Unit filename="../src/gfx/s3_bresenham.h" />
+		<Unit filename="../src/gfx/s3_outline.h" />
+		<Unit filename="../src/gui/s3_drawable.h" />
+		<Unit filename="../src/gui/s3_image.h" />
+		<Unit filename="../src/gui/s3_image_base.h" />
+		<Unit filename="../src/gui/s3_image_cairo.h" />
+		<Unit filename="../src/gui/s3_image_xlib.h" />
+		<Unit filename="../src/gui/s3_painter.h" />
+		<Unit filename="../src/gui/s3_painter_base.h" />
+		<Unit filename="../src/gui/s3_painter_cairo.h" />
+		<Unit filename="../src/gui/s3_painter_xlib.h" />
+		<Unit filename="../src/gui/s3_surface.h" />
+		<Unit filename="../src/gui/s3_surface_base.h" />
+		<Unit filename="../src/gui/s3_surface_cairo.h" />
+		<Unit filename="../src/gui/s3_surface_xlib.h" />
+		<Unit filename="../src/gui/s3_tilemap.h" />
+		<Unit filename="../src/gui/s3_widget.h" />
+		<Unit filename="../src/gui/s3_window.h" />
+		<Unit filename="../src/gui/s3_window_base.h" />
+		<Unit filename="../src/gui/s3_window_xlib.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_agg.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_bitmap.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_button.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_buttonrow.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_circular_waveform.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_color.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_dragvalue.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_graph.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_grid.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_group.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_groupbox.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_imagestrip.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_imgknob.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_keyboard.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_knob.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_knob2.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_menu.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_menuitem.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_modmatrix.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_nodes.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_number.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_overlay.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_pages.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_panel.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_plot.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_popup.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_scrollbar.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_scrollbox.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_selector.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_sizer.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_slider.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_sliderbank.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_string.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_switch.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_symbol.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_tabs.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_text.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_textarea.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_textedit.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_timeline.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_value.h" />
+		<Unit filename="../src/gui/widgets/s3_widget_waveform.h" />
+		<Unit filename="../src/gui/widgets/s3_widgets.h" />
+		<Unit filename="../src/plugin/s3_parameter.h" />
+		<Unit filename="../src/plugin/s3_plugin.h" />
+		<Unit filename="../src/plugin/s3_plugin_base.h" />
+		<Unit filename="../src/plugin/s3_plugin_exe.h" />
+		<Unit filename="../src/plugin/s3_plugin_id.h" />
+		<Unit filename="../src/plugin/s3_plugin_vst.h" />
+		<Unit filename="../src/plugin/s3_plugin_vst_dispatcher_opcodes.h" />
+		<Unit filename="../src/plugin/s3_program.h" />
+		<Unit filename="../src/s3.h" />
+		<Unit filename="../src/s3_config.h" />
+		<Unit filename="../src/s3_main.h" />
+		<Unit filename="../test/audio/test_dssi.h" />
+		<Unit filename="../test/common/test_inifile.h" />
+		<Unit filename="../test/common/test_lib.h" />
+		<Unit filename="../test/gui/test_gui.h" />
+		<Unit filename="../tools/bin2h.h" />
+		<Unit filename="../tools/dssi_test.h" />
+		<Unit filename="../tools/ladspa_setup.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,151 @@
+
+----------------------------------------------------------------------
+audio
+----------------------------------------------------------------------
+
+* simplify, or 'formalize' data transfer (samples) from/to audio
+  processing thread
+  audio -> gui/widgets (vu meter, waveform, ..)
+
+----------------------------------------------------------------------
+base
+----------------------------------------------------------------------
+
+* better linked list class(Es)
+
+  KODE_SingleList
+  KODE_DoubleList
+  is-a  (intrusive) vs has-a (container)
+  
+* kode_convert
+
+  able to specify number of digits after decimal, not just total
+  number of characters..
+  
+* kode_lock
+
+  atomic/barriers using atomics
+  
+* kode_queue
+
+  - 'safe' queue (not lock/wait free)
+  - spsc
+  - spmc
+  - mpsc
+  - mpmc
+  
+* kode_sort
+
+  ...
+  
+* kode_string
+
+  extract all function to kode_string_utils, and use them in the
+  string class
+  
+----------------------------------------------------------------------
+code, style, ..
+----------------------------------------------------------------------
+
+* mark appropriate classes and virtrual methods 'final'
+
+  a) to disallow inheriting from classes
+  b) optimizations, devirtualization
+
+  class Test : final TestBase {};
+  void test() final;
+  
+----------
+
+* tests
+
+  especially for 'base' files
+  a) to ensure correctness
+  b) error margins, ranges, etc (optimizations, math_fast, ..)
+
+----------
+
+* hide implementation details
+
+  hide class methods and variables that shouldn't be useable from 'the outside'
+  we could maybe have multiple inheritance, 
+  so that we can do something like
+
+  #include "kode_instance_implementation.h"
+  class kode_instance : public kode_instance_implementation {
+  }
+
+----------------------------------------------------------------------
+gui
+----------------------------------------------------------------------
+
+* some updates/redrawig isn't pixel-perfect in cairo..
+
+* take padding/margins into account when clipping
+
+* fix remapKey()
+
+* fix text input widget..
+
+* tooltips?
+
+* double-click
+
+  start timer/countdown when clicking, if clicking again before timed
+  out -> double-click..
+  do we need to delay the first click until we know if this is a
+  double-click or not?
+  
+* windows vs realigning..
+
+* hierarchy
+
+  kode_widget
+    kode_clickable_widget (clickedx clickedy)
+      kode_draggable_widget (movex,movey)
+      ..
+
+----------------------------------------------------------------------
+parameters
+----------------------------------------------------------------------
+
+* smoothing, dezipping
+
+  setCurrentValue
+  setTargetValue
+  getCurrentValue
+
+----------------------------------------------------------------------
+plugin
+----------------------------------------------------------------------
+
+* dssi
+
+* ladspa
+
+* lv2
+
+* vst2
+  use chunks, ala vst3
+  
+----------------------------------------------------------------------
+widgets:
+----------------------------------------------------------------------
+
+* multi-parameter
+
+  widget that controls multiple parameters, either at the same time
+  (xy-pad), or selected/indexed (banked?)
+  
+* modulation indication
+
+* scroll bar
+  
+  work like range slider, drag edges to resize
+  
+* range slider
+
+  drag middle section to modify both start/end values
+  click outside of thumb to pgup/pgdn
+
+
