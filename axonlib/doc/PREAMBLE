@@ -1,0 +1,49 @@
+                                   Preamble
+================================================================================
+
+  Project: Axonlib
+  Website: http://axonlib.googlecode.com/
+
+  Copyright (c) 2010 Tor-Helge Skei, Lubomir I. Ivanov et al
+
+* From here below:
+    - "the/this Library" will be referring to the name of this project.
+    - "the/this License" or "AXL" will be referring to the Axonlib License.
+
+The licensing of the Library is intended to protect the Library, its
+developers, and its users, so that the considerable investment it represents
+is not abused.
+
+Under the terms of the Axonlib License, you as a user are not
+obliged to distribute the Library source code with your products, if you
+distribute these products in binary form. However, you are prevented from
+restricting use of the Library in source code form, or denying others the
+rights to use or distribute the Library source code in the way intended.
+
+The Axonlib License establishes the copyright for the code and related
+material, and it gives you legal permission to copy, distribute and/or
+modify the Library under the terms of the License. It also asserts that no
+warranty is given by the authors for this or derived code.
+
+The core distribution of the Library contains files released under the
+following conditions:
+
+  Files are distributed under the GNU Lesser General Public License,
+  version 3, with some special exceptions one of which is that you may create
+  and distribute object code versions built from the source code or modified
+  versions of it (even if these modified versions include code under a
+  different license), and distribute such binaries under your own
+  terms. Read LICENSE_AX for more information.
+
+Other relevant files:
+
+- LICENSE_AX: a statement that the Library is covered by the GNU Lesser
+  General Public License, with an exception notice.
+
+- LICENSE_AXDOCS: the text of Axonlib Free Documentation License
+
+- LGPL: the text of the GNU Lesser General Public License.
+
+- GPL: the text of the GNU General Public License.
+
+================================================================================

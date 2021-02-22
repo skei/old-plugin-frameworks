@@ -1,0 +1,40 @@
+IMPORTANT NOTICE:
+
+note that some of the files in this directory have their own licenses. be sure
+to examine the relevant files, and make sure you agree on the individual
+licenses before using them in your own productions.
+
+LIST OF INCLUDED EXTERNAL LIBRARIES:
+
+* Daubechies.h:
+  - lib: Daubechies D4 wavelet transform
+  - author: unknown
+  - license: unknown
+* ladspa.h
+  - lib: Linux Audio Developer's Simple Plugin API 
+  - authors: Richard W.E. Furse et al
+  - license: LGPL
+* mayer_fft.h
+  - lib: FFT and FHT routines
+  - authors: Ron Mayer
+  - license: GPL or public domain
+* mtrand.h
+  - lib: Mersenne Twister random number generator
+  - authors: Makoto Matsumoto, Richard J. Wagner et al
+  - license: new BSD
+* picopng.h
+  - lib: PNG image decoder
+  - author: Lode Vandevenne et al
+  - license: public domain
+* stb_truetype.h
+  - lib: TrueType font processor
+  - author: Sean Barrett et al
+  - license: public domain
+* mverb/*
+  - lib: Reverb engine
+  - author: Martin Eastwood
+  - license: GPL
+* isaac.h
+  - lib: cryptographically safe random number generator
+  - author: Robert J. Jenkins Jr. & Quinn Tyler Jackson
+  - license: public domain

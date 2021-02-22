@@ -1,0 +1,75 @@
+================================================================================
+                                                                                
+                €€€€€€€€€€€€               €€€€€                 €€€€€€         
+             €€€€€€€€€€€€€€€€€€           €€€€€€€               €€€€€€€€        
+           €€€€€€€€€€€€€€€€€€€€€         €€€€€€€€€             €€€€€€€€€€       
+          €€€€€€€€€€€€€€€€€€€€€€€       €€€€€€€€€€             €€€€€€≤≤≤≤       
+         €€€€€€€€€≤≤≤≤≤≤≤≤≤≤≤≤≤€€€€     €€€€€≤≤≤≤≤≤             €€€≤≤≤≤≤        
+        €€€€€€€≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤     €€€≤≤≤≤≤≤≤              ≤≤≤≤≤≤         
+       €€€€€€≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤    €€€≤≤≤≤≤≤≤                             
+       €€€€€≤≤≤≤≤≤       ≤≤≤≤≤≤≤≤≤≤≤≤    €€€≤≤≤≤≤≤≤≤≤                           
+      €€€€€≤≤≤≤≤           ≤≤≤≤≤≤≤≤≤≤≤    €€≤≤≤≤≤≤≤≤≤€€€€€€€€€€€                
+      €€€€≤≤≤≤≤             ≤≤≤≤≤≤≤≤≤≤     €≤≤≤≤≤≤≤≤≤≤€€€€€€€€€€€€              
+      €€€≤≤≤≤≤≤             €€≤≤≤≤≤≤≤≤       ≤≤≤≤≤≤≤≤≤≤≤≤€€€€€€€€€€             
+      €€€≤≤≤≤≤≤             €€€≤≤≤≤≤≤≤        ≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤€€€€€€           
+      €€€≤≤≤≤≤≤             €€€≤≤≤≤≤≤≤          ≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤€€€          
+      €€€≤≤≤≤≤≤≤            €€€≤≤≤≤≤≤≤             ≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤€€         
+      €€€≤≤≤≤≤≤≤≤           €€€≤≤≤≤≤≤≤                      ≤≤≤≤≤≤≤≤≤≤€         
+       €€≤≤≤≤≤≤≤≤€€€€€€€    €€≤≤≤≤≤≤≤≤    €€€€€€              ≤≤≤≤≤≤≤≤≤≤        
+        €≤≤≤≤≤≤≤≤≤€€€€€€€   €€≤≤≤≤≤≤≤≤   €€€€€€€€              ≤≤≤≤≤≤≤≤≤        
+          ≤≤≤≤≤≤≤≤≤≤≤€€€€€  €€≤≤≤≤≤≤≤≤  €€€€€€€€€€             €≤≤≤≤≤≤≤≤        
+           ≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤  €€≤≤≤≤≤≤≤≤  €€€€€€≤≤≤≤             €€≤≤≤≤≤≤≤        
+            ≤≤≤≤≤≤≤≤≤≤≤≤≤   €€≤≤≤≤≤≤≤    €€€≤≤≤≤≤              €€€≤≤≤≤≤≤        
+              ≤≤≤≤≤≤≤≤≤≤     ≤≤≤≤≤≤≤      ≤≤≤≤≤≤                €€≤≤≤≤≤         
+                                                                                
+[axonlib v.0.1.2-pre]
+================================================================================
+
+README
+
+[*] project home
+http://axonlib.googlecode.com
+
+[*] licensing agreement:
+docs/PREAMBLE, docs/LICENSE_AX
+
+[*] building the doxygen documentation
+install doxygen and use docs/makedocs(.cmd) with doxygen.cfg to
+generate the documentation in the docs folder.
+
+[*] build requirements 
+  - linux
+    gcc, g++, xorg-dev 
+  - windows
+    mingw (official) or mingw-gcc-tdm
+
+for vst plugins you will need the vst sdk 2.4.
+place it in a folder outside of the axonlib folder (where this README is).
+  
+[*] getting started
+look in the folder source/test/ for some examples
+to compile use the compile scripts compile (linux bash)
+and compile.cmd (windows)
+
+to compile an executable:
+  ./compile ./test/test_gain_gui.cpp -exe
+to compile a vst plugin:
+  cd source
+  ./compile ./test/test_gain_gui.cpp -vst
+
+the resulting binary will be moved to axonlib/bin.
+see ./compile -h for more command line options
+
+[*] user notes
+docs/USER
+
+[*] developer notes
+docs/DEV
+
+[*] authors
+docs/AUTHORS
+
+[*] todo list
+docs/TODO
+
+================================================================================

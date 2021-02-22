@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/415/trunk/extern/mverb
+END
+knob.png
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/414/trunk/extern/mverb/knob.png
+END
+VstPlugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/414/trunk/extern/mverb/VstPlugin.cpp
+END
+Editor.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/414/trunk/extern/mverb/Editor.h
+END
+gpl-3.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/414/trunk/extern/mverb/gpl-3.0.txt
+END
+VstPlugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/414/trunk/extern/mverb/VstPlugin.h
+END
+MVerb.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/414/trunk/extern/mverb/MVerb.h
+END
+background.png
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/414/trunk/extern/mverb/background.png
+END
+Editor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/414/trunk/extern/mverb/Editor.cpp
+END

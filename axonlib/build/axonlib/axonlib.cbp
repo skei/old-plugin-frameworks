@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="axonlib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="linux exe - debug">
+				<Option output="../../bin/axonlib_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_EXE" />
+					<Add option="-DAX_DEBUG" />
+					<Add directory="../../ax" />
+				</Compiler>
+				<Linker>
+					<Add library="X11" />
+					<Add library="pthread" />
+					<Add library="Xrender" />
+				</Linker>
+			</Target>
+			<Target title="linux vst - debug">
+				<Option output="../../bin/axonlib_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-shared" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_VST" />
+					<Add option="-DAX_DEBUG" />
+					<Add directory="../../ax" />
+					<Add directory="../../../vstsdk24" />
+				</Compiler>
+				<Linker>
+					<Add library="X11" />
+					<Add library="pthread" />
+					<Add library="Xrender" />
+				</Linker>
+			</Target>
+			<Target title="linux ladspa - debug">
+				<Option output="../../bin/axonlib_debug_ladspa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-shared" />
+					<Add option="-fpic" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_LADSPA" />
+					<Add option="-DAX_DEBUG" />
+					<Add directory="../../ax" />
+				</Compiler>
+				<Linker>
+					<Add library="pthread" />
+				</Linker>
+			</Target>
+			<Target title="win32 exe - debug">
+				<Option output="../../bin/axonlib_debug.exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/debug/" />
+				<Option type="1" />
+				<Option compiler="mingw32" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-mwindows" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_EXE" />
+					<Add option="-DAX_DEBUG" />
+					<Add directory="../../ax" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows" />
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+			<Target title="win32 vst - debug">
+				<Option output="../../bin/axonlib_debug.dll" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/debug/" />
+				<Option type="3" />
+				<Option compiler="mingw32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-shared" />
+					<Add option="-mwindows" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_VST" />
+					<Add option="-DAX_DEBUG" />
+					<Add directory="../../ax" />
+					<Add directory="../../../vstsdk24" />
+				</Compiler>
+				<Linker>
+					<Add option="-shared" />
+					<Add option="-mwindows" />
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+			<Target title="linux exe - release">
+				<Option output="../../bin/axonlib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_EXE" />
+					<Add directory="../../ax" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="X11" />
+					<Add library="pthread" />
+					<Add library="Xrender" />
+				</Linker>
+			</Target>
+			<Target title="linux vst - release">
+				<Option output="../../bin/axonlib" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-shared" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_VST" />
+					<Add directory="../../ax" />
+					<Add directory="../../../vstsdk24" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="X11" />
+					<Add library="pthread" />
+					<Add library="Xrender" />
+				</Linker>
+			</Target>
+			<Target title="win32 exe - release">
+				<Option output="../../bin/axonlib.exe" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/release/" />
+				<Option type="1" />
+				<Option compiler="mingw32" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-mwindows" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_EXE" />
+					<Add directory="../../ax" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-mwindows" />
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+			<Target title="win32 vst - release">
+				<Option output="../../bin/axonlib.dll" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/release/" />
+				<Option type="3" />
+				<Option compiler="mingw32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-shared" />
+					<Add option="-mwindows" />
+					<Add option="-Wno-unused" />
+					<Add option="-Wno-long-long" />
+					<Add option="-DAX_FORMAT_VST" />
+					<Add directory="../../ax" />
+					<Add directory="../../../vstsdk24" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-shared" />
+					<Add option="-mwindows" />
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../../../../Desktop/commit" />
+		<Unit filename="../../ax/audio/axGraph.h" />
+		<Unit filename="../../ax/audio/axLibaam.h" />
+		<Unit filename="../../ax/audio/axModule.h" />
+		<Unit filename="../../ax/audio/axVoices.h" />
+		<Unit filename="../../ax/axConfig.h" />
+		<Unit filename="../../ax/base/README" />
+		<Unit filename="../../ax/base/axBase.h" />
+		<Unit filename="../../ax/base/axDescriptor.h" />
+		<Unit filename="../../ax/base/axFormat.h" />
+		<Unit filename="../../ax/base/axFormatExe.h" />
+		<Unit filename="../../ax/base/axFormatLadspa.h" />
+		<Unit filename="../../ax/base/axFormatVst.h" />
+		<Unit filename="../../ax/base/axInstance.h" />
+		<Unit filename="../../ax/base/axInterface.h" />
+		<Unit filename="../../ax/base/axInterfaceLinux.h" />
+		<Unit filename="../../ax/base/axInterfaceNone.h" />
+		<Unit filename="../../ax/base/axInterfaceWin32.h" />
+		<Unit filename="../../ax/base/axPlatform.h" />
+		<Unit filename="../../ax/base/axPlatformLinux.h" />
+		<Unit filename="../../ax/base/axPlatformWin32.h" />
+		<Unit filename="../../ax/base/hack_hack.h" />
+		<Unit filename="../../ax/core/axArray.h" />
+		<Unit filename="../../ax/core/axAssert.h" />
+		<Unit filename="../../ax/core/axBasePath.h" />
+		<Unit filename="../../ax/core/axBuffer.h" />
+		<Unit filename="../../ax/core/axCompress.h" />
+		<Unit filename="../../ax/core/axCpu.h" />
+		<Unit filename="../../ax/core/axDebug.h" />
+		<Unit filename="../../ax/core/axDebugConsole.h" />
+		<Unit filename="../../ax/core/axDefines.h" />
+		<Unit filename="../../ax/core/axDetectWine.h" />
+		<Unit filename="../../ax/core/axFile.h" />
+		<Unit filename="../../ax/core/axList.h" />
+		<Unit filename="../../ax/core/axMalloc.h" />
+		<Unit filename="../../ax/core/axMath.h" />
+		<Unit filename="../../ax/core/axMutex.h" />
+		<Unit filename="../../ax/core/axPoint.h" />
+		<Unit filename="../../ax/core/axRand.h" />
+		<Unit filename="../../ax/core/axRect.h" />
+		<Unit filename="../../ax/core/axStdlib.h" />
+		<Unit filename="../../ax/core/axString.h" />
+		<Unit filename="../../ax/core/axThread.h" />
+		<Unit filename="../../ax/core/axUtils.h" />
+		<Unit filename="../../ax/doxygen/doxygen_pages.h" />
+		<Unit filename="../../ax/dsp/dspDCF.h" />
+		<Unit filename="../../ax/dsp/dspInterpolate.h" />
+		<Unit filename="../../ax/dsp/dspOnePole.h" />
+		<Unit filename="../../ax/dsp/dspRBJ.h" />
+		<Unit filename="../../ax/dsp/dspRC.h" />
+		<Unit filename="../../ax/dsp/dspRMS.h" />
+		<Unit filename="../../ax/dsp/dspSVF.h" />
+		<Unit filename="../../ax/dsp/dsp_Env.h" />
+		<Unit filename="../../ax/dsp/dsp_Osc.h" />
+		<Unit filename="../../ax/gui/axBitmap.h" />
+		<Unit filename="../../ax/gui/axBitmapBase.h" />
+		<Unit filename="../../ax/gui/axBitmapLoader.h" />
+		<Unit filename="../../ax/gui/axBitmapRender.h" />
+		<Unit filename="../../ax/gui/axCanvas.h" />
+		<Unit filename="../../ax/gui/axCanvasBase.h" />
+		<Unit filename="../../ax/gui/axColor.h" />
+		<Unit filename="../../ax/gui/axEditor.h" />
+		<Unit filename="../../ax/gui/axFont.h" />
+		<Unit filename="../../ax/gui/axSkin.h" />
+		<Unit filename="../../ax/gui/axSurface.h" />
+		<Unit filename="../../ax/gui/axSurfaceBase.h" />
+		<Unit filename="../../ax/gui/axSymbols.h" />
+		<Unit filename="../../ax/gui/axWidget.h" />
+		<Unit filename="../../ax/gui/axWindow.h" />
+		<Unit filename="../../ax/gui/axWindowBase.h" />
+		<Unit filename="../../ax/gui/linux/axBitmapLinux.h" />
+		<Unit filename="../../ax/gui/linux/axCanvasLinux.h" />
+		<Unit filename="../../ax/gui/linux/axSurfaceLinux.h" />
+		<Unit filename="../../ax/gui/linux/axWindowLinux.h" />
+		<Unit filename="../../ax/gui/win32/axBitmapWin32.h" />
+		<Unit filename="../../ax/gui/win32/axCanvasWin32.h" />
+		<Unit filename="../../ax/gui/win32/axSurfaceWin32.h" />
+		<Unit filename="../../ax/gui/win32/axWindowWin32.h" />
+		<Unit filename="../../ax/par/axParameter.h" />
+		<Unit filename="../../ax/par/axProgram.h" />
+		<Unit filename="../../ax/par/parDb.h" />
+		<Unit filename="../../ax/par/parFloat.h" />
+		<Unit filename="../../ax/par/parInteger.h" />
+		<Unit filename="../../ax/script/axScript.h" />
+		<Unit filename="../../ax/script/axScriptStdlib.h" />
+		<Unit filename="../../ax/skins/axSkinBasic.h" />
+		<Unit filename="../../ax/skins/axSkinDef.h" />
+		<Unit filename="../../ax/wdg/wdgBitmap.h" />
+		<Unit filename="../../ax/wdg/wdgButton.h" />
+		<Unit filename="../../ax/wdg/wdgButtons.h" />
+		<Unit filename="../../ax/wdg/wdgGrid.h" />
+		<Unit filename="../../ax/wdg/wdgGroupBox.h" />
+		<Unit filename="../../ax/wdg/wdgImage.h" />
+		<Unit filename="../../ax/wdg/wdgKnob.h" />
+		<Unit filename="../../ax/wdg/wdgLabel.h" />
+		<Unit filename="../../ax/wdg/wdgMenuItem.h" />
+		<Unit filename="../../ax/wdg/wdgOctave.h" />
+		<Unit filename="../../ax/wdg/wdgPages.h" />
+		<Unit filename="../../ax/wdg/wdgPanel.h" />
+		<Unit filename="../../ax/wdg/wdgScrollBar.h" />
+		<Unit filename="../../ax/wdg/wdgScrollBox.h" />
+		<Unit filename="../../ax/wdg/wdgShape.h" />
+		<Unit filename="../../ax/wdg/wdgSizer.h" />
+		<Unit filename="../../ax/wdg/wdgSlider.h" />
+		<Unit filename="../../ax/wdg/wdgValue.h" />
+		<Unit filename="../plugin.cpp" />
+		<Unit filename="../../doc/AUTHORS" />
+		<Unit filename="../../doc/FEATURES" />
+		<Unit filename="../../doc/HISTORY" />
+		<Unit filename="../../doc/OVERVIEW" />
+		<Unit filename="../../doc/TODO" />
+		<Unit filename="../../extern/Daubechies.h" />
+		<Unit filename="../../extern/isaac.h" />
+		<Unit filename="../../extern/ladspa.h" />
+		<Unit filename="../../extern/mayer_fft.h" />
+		<Unit filename="../../extern/mtrand.h" />
+		<Unit filename="../../extern/picopng.h" />
+		<Unit filename="../../extern/stb_truetype.h" />
+		<Unit filename="../../source/SERIALS" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

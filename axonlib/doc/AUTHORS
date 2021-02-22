@@ -1,0 +1,42 @@
+* AXONLIB DEVELOPERS:
+
+ccernn (Tor-Helge Skei)
+  cern.th.skei@gmail.com
+
+neolit123 (Lubomir I. Ivanov)
+  neolit123@gmail.com
+
+================================================================================
+* THIRD PARTIES:
+
+Lode Vandevenne
+  LodePNG / PicoPNG
+
+Jorgen Aase
+  some initial lowlevel linux/win32 system code based on his synth4 example
+  (and kickstarted this axonlib project)
+
+Makoto Matsumoto, Takuji Nishimura, Richard J. Wagner et al
+  marsenne twister: initial work and implementations
+  
+Ron Mayer
+  mayer_fft (from autotalent)
+  (see mayer_fft.c for further info)
+  - note: check license
+  
+Sean Barrett
+  stb_truetype
+
+Ian Kaplan
+  daubechies wavelet transform
+
+DJ Delorie, Joerg Walter, Doug Lea et al
+  basis for the custom fast memmory allocator "assembly" in axMalloc.h
+
+================================================================================
+* THANKS GOES TO
+  (the following projects and their authors for providing open source code that
+  can be used for refference):
+  GCC, MINIX, DJGPP, MINGW, MINGW-GCC-TDM
+
+================================================================================

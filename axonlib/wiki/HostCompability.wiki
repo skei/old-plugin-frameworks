@@ -1,0 +1,26 @@
+#summary compatible hosts
+
+plugins made with axonlib reportedly working in: (with eventual comments)
+
+*linux:*
+  * energy xt 2
+  * qtractor (plugin window resizing doesn't work)
+  * renoise 2.5
+  * jost
+
+*win32:*<br>
+_note: VST-Plugin Unit Test reports that most major host should work for win32_
+  * ableton live 8.1
+  * audacity
+  * cantabile
+  * cubase 4 (plugin window resizing doesn't work)
+  * cakewalk vst adapter 4 [vst -> dx wrapper]
+  * energy xt 1.4
+  * energy xt 2
+  * fl studio 9
+  * kristal
+  * reaper
+  * renoise 2.5
+  * savihost
+  * vsthost
+  * wavosaur

@@ -1,0 +1,53 @@
+list of feature for axonlib v.0.1.0
+
+OVERVIEW:
+* binary format abstraction for vst plugins and excutables on linux and windows
+* common look, feel, functionality among platforms
+* few external dependencies
+* compile scripts with simplified command lines for the gnu gcc compiler
+* tiny and compact binaries with no big, external libraries needed
+* cpu efficient, code prepared for compiler analysis and optimization
+* options to disable code or functionality that is not needed
+* flexible axl license, (generally gpl w/ exception for proprietary use)
+
+CORE:
+* builtin fast memory allocator routines (and leak detection functionality)
+* builtin routines for low-level string and memory manipulation
+* heavily optimized mathematical functions and approximations
+* intuitive debugging functionality & helpers
+* static and runtime assertion
+
+GUI:
+* hierarchial gui, flexible, skinnable, auto-layout, sizeable, moveable etc
+* resizeable window/editor (in plugin hosts as well)
+* low level gfx (gdi/xlib) canvas, surface, bitmap etc
+* partial support for antialiased, transparent lines
+* support decoding 32bit pngs from memory or from an external file
+* scalable,alpha blended bitmaps
+* mouse cursor shapes, hovering hints, mouse capture, modal widgets
+
+DSP:
+* polyphonic voice manager and event scheduler
+* modular audio graph with connectable dsp modules
+* rbj filter bank
+* basic oversampling container
+* chamberlin state variable filter
+* rms approximation
+* envelope follower
+* basic waveform generators
+
+PLUGINS:
+* lots of included example vst plugins
+* simplified creation and use of parameters
+* easy host tempo/sync handling for audio and midi
+* can load external files directly from plugin
+  folder on both linux and windows
+
+OTHER:
+* basic read/write access for external files
+* utility methods for bit manipulation and conversations
+* scripts, stack-based, 4th inspired, rudimentary compilation (bytecode)
+* builtin, random number generators
+* mersenne twister implementation, customized for small binary size impact
+* fft implementation
+* more...

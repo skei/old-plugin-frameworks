@@ -1,0 +1,28 @@
+VERSION HISTORY
+================
+
+v ???
+! debug: disabled the winapi window
+! debug: new class structure
+! axRand: moved the default axRand methods into a class
++ extern/isaac - crypto-safe random number generator
+* axUtils: fixed a -fPIC / axCPUID issue
+* ladspa: added hints and override values for the parameters
+??
+
+v0.1.1a - 290610
+* fixed some issue with 64bit builds
+* axRand: use simplistic axRand() by default, more complicated prngs are enabled
+  with a flag.
+  
+v0.1.1 - 230610
++ ladspa: added support for ladspa (win32 & linux)
++ extern/mverb: added open source (gpl) reverb engine by martin eastwood
++ ports: added mverb plugin port
++ ports: added sstillwell_eventhorizon port
++ compile: added timestamp option (-ts)
++ compile: added option to disable gui (-nogui)
++ compile: added the option to pass additional flags to the compiler
+* vst: fixed support for older vst hosts
+* vst: fixed blank presets in energyxt
+* vst: fixed crash if no programs  

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="axonlib7" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\..\bin\axonlib7_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="..\..\bin\axonlib7_release" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-mwindows" />
+			<Add option="-shared" />
+			<Add directory="..\..\ax" />
+			<Add directory="..\..\..\vstsdk24" />
+		</Compiler>
+		<Linker>
+			<Add option="-mwindows" />
+			<Add option="-shared" />
+		</Linker>
+		<Unit filename="..\..\ax\audio\axGraph.h" />
+		<Unit filename="..\..\ax\audio\axModule.h" />
+		<Unit filename="..\..\ax\audio\axVoices.h" />
+		<Unit filename="..\..\ax\axConfig.h" />
+		<Unit filename="..\..\ax\axDefines.h" />
+		<Unit filename="..\..\ax\axEditor.h" />
+		<Unit filename="..\..\ax\axParameter.h" />
+		<Unit filename="..\..\ax\axPlugin.h" />
+		<Unit filename="..\..\ax\base\axBitmapBase.h" />
+		<Unit filename="..\..\ax\base\axCanvasBase.h" />
+		<Unit filename="..\..\ax\base\axImage.h" />
+		<Unit filename="..\..\ax\base\axPluginBase.h" />
+		<Unit filename="..\..\ax\base\axSurfaceBase.h" />
+		<Unit filename="..\..\ax\base\axWindowBase.h" />
+		<Unit filename="..\..\ax\core\axArray.h" />
+		<Unit filename="..\..\ax\core\axBuffer.h" />
+		<Unit filename="..\..\ax\core\axDebug.h" />
+		<Unit filename="..\..\ax\core\axList.h" />
+		<Unit filename="..\..\ax\core\axMath.h" />
+		<Unit filename="..\..\ax\core\axPoint.h" />
+		<Unit filename="..\..\ax\core\axRect.h" />
+		<Unit filename="..\..\ax\core\axString.h" />
+		<Unit filename="..\..\ax\core\axUtils.h" />
+		<Unit filename="..\..\ax\deprecated\axApplication.h" />
+		<Unit filename="..\..\ax\dsp\dspDCF.h" />
+		<Unit filename="..\..\ax\dsp\dspInterpolate.h" />
+		<Unit filename="..\..\ax\dsp\dspOnePole.h" />
+		<Unit filename="..\..\ax\dsp\dspPRNG.h" />
+		<Unit filename="..\..\ax\dsp\dspRBJ.h" />
+		<Unit filename="..\..\ax\dsp\dspRC.h" />
+		<Unit filename="..\..\ax\dsp\dspRMS.h" />
+		<Unit filename="..\..\ax\dsp\dspSVF.h" />
+		<Unit filename="..\..\ax\dsp\dsp_Env.h" />
+		<Unit filename="..\..\ax\dsp\dsp_Osc.h" />
+		<Unit filename="..\..\ax\gui\axBitmap.h" />
+		<Unit filename="..\..\ax\gui\axBitmapLoader.h" />
+		<Unit filename="..\..\ax\gui\axCanvas.h" />
+		<Unit filename="..\..\ax\gui\axColor.h" />
+		<Unit filename="..\..\ax\gui\axFont.h" />
+		<Unit filename="..\..\ax\gui\axSkin.h" />
+		<Unit filename="..\..\ax\gui\axSkinDefault.h" />
+		<Unit filename="..\..\ax\gui\axSurface.h" />
+		<Unit filename="..\..\ax\gui\axSymbols.h" />
+		<Unit filename="..\..\ax\gui\axWidget.h" />
+		<Unit filename="..\..\ax\gui\axWindow.h" />
+		<Unit filename="..\..\ax\par\parFloat.h" />
+		<Unit filename="..\..\ax\par\parInteger.h" />
+		<Unit filename="..\..\ax\platform\axContext.h" />
+		<Unit filename="..\..\ax\platform\axMutex.h" />
+		<Unit filename="..\..\ax\platform\axThread.h" />
+		<Unit filename="..\..\ax\platform\exe\axPluginExe.h" />
+		<Unit filename="..\..\ax\platform\linux\axBitmapLinux.h" />
+		<Unit filename="..\..\ax\platform\linux\axCanvasLinux.h" />
+		<Unit filename="..\..\ax\platform\linux\axSurfaceLinux.h" />
+		<Unit filename="..\..\ax\platform\linux\axWindowLinux.h" />
+		<Unit filename="..\..\ax\platform\vst\axHostVst.h" />
+		<Unit filename="..\..\ax\platform\vst\axPluginVst.h" />
+		<Unit filename="..\..\ax\platform\win32\axBitmapWin32.h" />
+		<Unit filename="..\..\ax\platform\win32\axCanvasWin32.h" />
+		<Unit filename="..\..\ax\platform\win32\axSurfaceWin32.h" />
+		<Unit filename="..\..\ax\platform\win32\axWindowWin32.h" />
+		<Unit filename="..\..\ax\script\axScript.h" />
+		<Unit filename="..\..\ax\script\axScriptStdlib.h" />
+		<Unit filename="..\..\ax\wdg\wdgBitmap.h" />
+		<Unit filename="..\..\ax\wdg\wdgButton.h" />
+		<Unit filename="..\..\ax\wdg\wdgButtons.h" />
+		<Unit filename="..\..\ax\wdg\wdgGroupBox.h" />
+		<Unit filename="..\..\ax\wdg\wdgImage.h" />
+		<Unit filename="..\..\ax\wdg\wdgKnob.h" />
+		<Unit filename="..\..\ax\wdg\wdgLabel.h" />
+		<Unit filename="..\..\ax\wdg\wdgOctave.h" />
+		<Unit filename="..\..\ax\wdg\wdgPages.h" />
+		<Unit filename="..\..\ax\wdg\wdgPanel.h" />
+		<Unit filename="..\..\ax\wdg\wdgScrollBar.h" />
+		<Unit filename="..\..\ax\wdg\wdgScrollBox.h" />
+		<Unit filename="..\..\ax\wdg\wdgShape.h" />
+		<Unit filename="..\..\ax\wdg\wdgSizer.h" />
+		<Unit filename="..\..\ax\wdg\wdgSlider.h" />
+		<Unit filename="..\..\ax\wdg\wdgTextList.h" />
+		<Unit filename="..\..\ax\wdg\wdgValue.h" />
+		<Unit filename="..\..\test\test_widgets.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

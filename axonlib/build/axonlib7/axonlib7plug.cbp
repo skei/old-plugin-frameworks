@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="axonlib7plug" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="win32 vst debug">
+				<Option output="..\..\bin\axonlib_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-shared" />
+					<Add option="-DAX_FORMAT_VST" />
+					<Add option="-DAX_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-shared" />
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+			<Target title="win32 vst release">
+				<Option output="..\..\bin\axonlib_release" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-shared" />
+					<Add option="-msse" />
+					<Add option="-mfpmath=sse,387" />
+					<Add option="-DAX_FORMAT_VST" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-shared" />
+					<Add option="-fstack-check" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-gc-sections" />
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+			<Target title="win32 exe debug">
+				<Option output="..\..\bin\axonlib_debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DAX_FORMAT_EXE" />
+					<Add option="-DAX_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+			<Target title="win32 exe release">
+				<Option output="..\..\bin\axonlib_release" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-msse" />
+					<Add option="-mfpmath=sse,387" />
+					<Add option="-DAX_FORMAT_EXE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-fstack-check" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-gc-sections" />
+					<Add library="libmsimg32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="..\..\ax" />
+			<Add directory="..\..\..\vstsdk24" />
+		</Compiler>
+		<Linker>
+			<Add option="-mwindows" />
+		</Linker>
+		<Unit filename="..\..\..\..\Desktop\commit.txt" />
+		<Unit filename="..\..\ax\audio\axGraph.h" />
+		<Unit filename="..\..\ax\audio\axLibaam.h" />
+		<Unit filename="..\..\ax\audio\axModule.h" />
+		<Unit filename="..\..\ax\audio\axVoices.h" />
+		<Unit filename="..\..\ax\axConfig.h" />
+		<Unit filename="..\..\ax\core\axArray.h" />
+		<Unit filename="..\..\ax\core\axAssert.h" />
+		<Unit filename="..\..\ax\core\axBuffer.h" />
+		<Unit filename="..\..\ax\core\axDebug.h" />
+		<Unit filename="..\..\ax\core\axDefines.h" />
+		<Unit filename="..\..\ax\core\axList.h" />
+		<Unit filename="..\..\ax\core\axMalloc.h" />
+		<Unit filename="..\..\ax\core\axMath.h" />
+		<Unit filename="..\..\ax\core\axPoint.h" />
+		<Unit filename="..\..\ax\core\axRand.h" />
+		<Unit filename="..\..\ax\core\axRect.h" />
+		<Unit filename="..\..\ax\core\axStdlib.h" />
+		<Unit filename="..\..\ax\core\axString.h" />
+		<Unit filename="..\..\ax\core\axUtils.h" />
+		<Unit filename="..\..\ax\dsp\dspDCF.h" />
+		<Unit filename="..\..\ax\dsp\dspInterpolate.h" />
+		<Unit filename="..\..\ax\dsp\dspOnePole.h" />
+		<Unit filename="..\..\ax\dsp\dspRBJ.h" />
+		<Unit filename="..\..\ax\dsp\dspRC.h" />
+		<Unit filename="..\..\ax\dsp\dspRMS.h" />
+		<Unit filename="..\..\ax\dsp\dspSVF.h" />
+		<Unit filename="..\..\ax\dsp\dsp_Env.h" />
+		<Unit filename="..\..\ax\dsp\dsp_Osc.h" />
+		<Unit filename="..\..\ax\format\axFormat.h" />
+		<Unit filename="..\..\ax\format\axFormatAu.h" />
+		<Unit filename="..\..\ax\format\axFormatBase.h" />
+		<Unit filename="..\..\ax\format\axFormatDssi.h" />
+		<Unit filename="..\..\ax\format\axFormatExe.h" />
+		<Unit filename="..\..\ax\format\axFormatLadspa.h" />
+		<Unit filename="..\..\ax\format\axFormatLv2.h" />
+		<Unit filename="..\..\ax\format\axFormatVst.h" />
+		<Unit filename="..\..\ax\format\axProgram.h" />
+		<Unit filename="..\..\ax\format\axReaperExt.h" />
+		<Unit filename="..\..\ax\gui\axBitmap.h" />
+		<Unit filename="..\..\ax\gui\axBitmapBase.h" />
+		<Unit filename="..\..\ax\gui\axBitmapLoader.h" />
+		<Unit filename="..\..\ax\gui\axBitmapRender.h" />
+		<Unit filename="..\..\ax\gui\axCanvas.h" />
+		<Unit filename="..\..\ax\gui\axCanvasBase.h" />
+		<Unit filename="..\..\ax\gui\axColor.h" />
+		<Unit filename="..\..\ax\gui\axEditor.h" />
+		<Unit filename="..\..\ax\gui\axFont.h" />
+		<Unit filename="..\..\ax\gui\axSkin.h" />
+		<Unit filename="..\..\ax\gui\axSurface.h" />
+		<Unit filename="..\..\ax\gui\axSurfaceBase.h" />
+		<Unit filename="..\..\ax\gui\axSymbols.h" />
+		<Unit filename="..\..\ax\gui\axWidget.h" />
+		<Unit filename="..\..\ax\gui\axWindow.h" />
+		<Unit filename="..\..\ax\gui\axWindowBase.h" />
+		<Unit filename="..\..\ax\par\axParameter.h" />
+		<Unit filename="..\..\ax\par\parDb.h" />
+		<Unit filename="..\..\ax\par\parFloat.h" />
+		<Unit filename="..\..\ax\par\parInteger.h" />
+		<Unit filename="..\..\ax\platform\axContext.h" />
+		<Unit filename="..\..\ax\platform\axMutex.h" />
+		<Unit filename="..\..\ax\platform\axThread.h" />
+		<Unit filename="..\..\ax\platform\linux\axBitmapLinux.h" />
+		<Unit filename="..\..\ax\platform\linux\axCanvasLinux.h" />
+		<Unit filename="..\..\ax\platform\linux\axSurfaceLinux.h" />
+		<Unit filename="..\..\ax\platform\linux\axWindowLinux.h" />
+		<Unit filename="..\..\ax\platform\win32\axBitmapWin32.h" />
+		<Unit filename="..\..\ax\platform\win32\axCanvasWin32.h" />
+		<Unit filename="..\..\ax\platform\win32\axSurfaceWin32.h" />
+		<Unit filename="..\..\ax\platform\win32\axWindowWin32.h" />
+		<Unit filename="..\..\ax\script\axScript.h" />
+		<Unit filename="..\..\ax\script\axScriptStdlib.h" />
+		<Unit filename="..\..\ax\skins\axSkinBasic.h" />
+		<Unit filename="..\..\ax\skins\axSkinDef.h" />
+		<Unit filename="..\..\ax\temporary\axFormat.h" />
+		<Unit filename="..\..\ax\temporary\axFormatExe.h" />
+		<Unit filename="..\..\ax\temporary\axFormatLadspa.h" />
+		<Unit filename="..\..\ax\temporary\axFormatVst.h" />
+		<Unit filename="..\..\ax\temporary\axInterface.h" />
+		<Unit filename="..\..\ax\temporary\axInterfaceLinux.h" />
+		<Unit filename="..\..\ax\temporary\axInterfaceNone.h" />
+		<Unit filename="..\..\ax\temporary\axInterfaceWin32.h" />
+		<Unit filename="..\..\ax\temporary\axPlatform.h" />
+		<Unit filename="..\..\ax\temporary\axPlatformLinux.h" />
+		<Unit filename="..\..\ax\temporary\axPlatformWin32.h" />
+		<Unit filename="..\..\ax\wdg\wdgBitmap.h" />
+		<Unit filename="..\..\ax\wdg\wdgButton.h" />
+		<Unit filename="..\..\ax\wdg\wdgButtons.h" />
+		<Unit filename="..\..\ax\wdg\wdgGrid.h" />
+		<Unit filename="..\..\ax\wdg\wdgGroupBox.h" />
+		<Unit filename="..\..\ax\wdg\wdgImage.h" />
+		<Unit filename="..\..\ax\wdg\wdgKnob.h" />
+		<Unit filename="..\..\ax\wdg\wdgLabel.h" />
+		<Unit filename="..\..\ax\wdg\wdgMenuItem.h" />
+		<Unit filename="..\..\ax\wdg\wdgOctave.h" />
+		<Unit filename="..\..\ax\wdg\wdgPages.h" />
+		<Unit filename="..\..\ax\wdg\wdgPanel.h" />
+		<Unit filename="..\..\ax\wdg\wdgScrollBar.h" />
+		<Unit filename="..\..\ax\wdg\wdgScrollBox.h" />
+		<Unit filename="..\..\ax\wdg\wdgShape.h" />
+		<Unit filename="..\..\ax\wdg\wdgSizer.h" />
+		<Unit filename="..\..\ax\wdg\wdgSlider.h" />
+		<Unit filename="..\..\ax\wdg\wdgValue.h" />
+		<Unit filename="..\..\doc\AUTHORS" />
+		<Unit filename="..\..\doc\FEATURES" />
+		<Unit filename="..\..\doc\OVERVIEW" />
+		<Unit filename="..\..\doc\TODO" />
+		<Unit filename="..\..\extern\Daubechies.h" />
+		<Unit filename="..\..\extern\mayer_fft.h" />
+		<Unit filename="..\..\extern\mtrand.h" />
+		<Unit filename="..\..\extern\picopng.h" />
+		<Unit filename="..\..\extern\stb_truetype.h" />
+		<Unit filename="..\..\source\SERIALS" />
+		<Unit filename="..\..\test\test_templates.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

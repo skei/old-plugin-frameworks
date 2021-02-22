@@ -1,0 +1,12 @@
+#labels Featured
+Axonlib is released under the Axonlib License (AXL):
+
+<br>
+list of related documents: <br>
+  <a href='http://axonlib.googlecode.com/svn/trunk/doc/PREAMBLE' target='_blank'>PREAMBLE</a><br>
+  <a href='http://axonlib.googlecode.com/svn/trunk/doc/LICENSE_AX' target='_blank'> LICENSE_AX</a> - the library license file <br>
+  <a href='http://axonlib.googlecode.com/svn/trunk/doc/LICENSE_AXDOCS' target='_blank'> LICENSE_AXDOCS</a> - the documentation license file <br>
+  <a href='http://axonlib.googlecode.com/svn/trunk/doc/GPL' target='_blank'>GPL</a><br>
+  <a href='http://axonlib.googlecode.com/svn/trunk/doc/LGPL' target='_blank'>LGPL</a><br>
+
+----

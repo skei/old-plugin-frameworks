@@ -1,0 +1,54 @@
+todo:
+- use void* when typecasting int/ptr's (to be more 64-bit safe)
+- axWindow (Win32/Linux), reparent(), use void*
+
+
+axBase.h
+------------------------------
+  axBase
+    axPlatform
+      axPlatformLinux
+      axPlatformWin32
+    axInterface
+      axInterfaceLinux (xlib)
+      axInterfaceWin32 (gdi)
+      axInterfaceNone (nogui)
+    axFormat
+      axFormatExe
+      axFormatVst
+      axFormatLadspa
+  axBaseImpl
+  axGlobalScope
+  AX_ENTRYPOINT
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+
+Format
+
+  encapsulates the following classes,
+  selectively included with defines and macros,
+  and handles the entry point for the binary (dll/so/exe)
+
+Interface
+
+  window-manager, but we have only one window :-/
+  can be a 'real' window, or embedded in a host-provided window
+  this is not the window itself, but handles the info needed for
+  creating one
+
+Platform
+
+  abstraction for underlying os/system
+  win32, linux
+
+Descriptor
+
+  const data for your plugin, that the host might want before it creates
+  an instance (for enumeration, etc)
+
+Instance
+
+  each separate running instance of your plugin

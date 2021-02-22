@@ -1,0 +1,149 @@
+- point out that some of the 'extern' files might use other licenses than
+  the axonlib itself, and that projects using them must obey these
+  licenses (gpl, ..)
+
+- copy/paste: docygen comments from rev.151
+  (but some needs to be redone because of changes)
+
+- makedocs_dev
+  show things they need to know for extending the library,
+  or making their own sub-classes of things like widgets,
+  parameters, ...
+
+- makedocs_user
+  hide protected things, so they see only the things they need to
+  focus on, only what is needed to make a plugin with the library.
+
+- remove 'test' directory.
+  only tests used wihle developing there.
+  none of them is guaranteed to function as the library evolves
+
+- examine possibilities for upx (or something else) compression of
+  linux shared libraries (.so)
+
+- makefiles?
+  would it really help anything, since it's mainly .h files?
+
+----------------------------------------------------------------------
+core:
+----------------------------------------------------------------------
+
+- mac?
+
+- axAtomic
+  thread-safe atomic instructions for light-weight mutex alternative.
+
+- solidifying and documenting possible methods for debugging memory problems
+  and bugs using operator / function overriding and external tools such
+  as valgrind (linux), dr. memory (win32), objdump, ndisasm and addr2line
+  (binutils).
+
+- find a way to properly add debug symbols in linux builds
+  (for use with addr2line)
+
+----------------------------------------------------------------------
+plugin:
+----------------------------------------------------------------------
+
+- programs/banks
+  some initial support is in place..
+
+- host info (id, name, specific features)
+  for host-dependent things
+  (for example, window resizing is handled very different in hosts,
+  so we might need to do different things depending on host)
+
+- chunks
+
+- more parameter types, for automatic scaling/transforming
+  cubed, squared, ms, hz, db, etc...
+
+- dirty-parameters?
+  put needs-to-be-updated parameters in a list,
+  read this list in doProcessBlock, sub-divide block into chunks,
+  and set parameters inbetween these. (event-manager below)
+
+  and we will can avoid getting any direct parameter changes from
+  another thread or something in the middle of out processing() calculations
+
+- event manager (ala voice manager but for all kinds of events)
+
+----------------------------------------------------------------------
+gui:
+----------------------------------------------------------------------
+
+- [delegate to skins?]
+  png loading simplification & streamlining
+  simplify default bahaviour, keep possibilities for manual low-level control
+
+- fonts
+  platform-independent handling of fonts
+  fontname, size, type (bold, italic, underscore)
+  how to do the 'fontname' on different platforms with different fonts installed,
+  and each handling fonts differently...
+  one way is like web browsers...
+  define a set of std font types to chosse between
+  sans,serif,mono,big,...
+  [there's an interesting ttf parser and renderer here: http://nothings.org/]
+
+- axCanvas[Win32/Linux]
+  clipping rectangles not working properly (most problematic on win32).
+  i think it is happening because when we're returning from a
+  container's doPaint, we reset the clipping rectangle.
+  we could perhaps have some rect stack that we can push and pop to/from
+
+- the skin stuff needs a bit more work, more polish, more functionality,
+  and it needs to be solidified, 'cast in stone'...
+
+- more cursor shape constants. missiong a few on windows
+  (window resizing, finger vs hand, ...)
+  even better: user-defined cursor shapes
+
+- don't propagate change if widget/parameter value not changed
+  (no repeatedly sending 0's, etc..)
+
+- optimize redrawing.
+  - clip background images to update Rectangle
+  - don't draw widgets that are fully obscured by other widgets on top off it.
+  - transparent/opaque widget flag?
+  - another connected things is _when_ we ca call for the redrawing..
+    (timer, idle editor, ..)
+
+  one problem with the redrawing is that it is asynchronous, and completely
+  separated. we send an invalidate message to the host/os when something changes,
+  indicating that we want to update this or that rectangle on the screen.
+  then a bit later, when an WM_PAINT or Expose message is coming,
+  we are only given the rectangle to update, not what has changed, or why,
+  or anything else.. and the drawing messages have a quite low priority,
+  so they could be delayed for quite some time, if the cpu is busy with
+  'other things'. and, the os can combine several invalidated rectangles
+  into one larger one...
+  currently we are using 'brute force', and redraw everythig, starting from
+  the bottom and upwards.. some intersection testing is done to avoid
+  drawing widgets that are outside of the update rect.
+
+
+----------------------------------------------------------------------
+widgets:
+----------------------------------------------------------------------
+
+- wdgShape
+  very simple, to draw backgrounds, simple borders around things, ...
+  fill out space in layouts
+
+- wdgTextList
+  a scrollbox with labels. max number of elements.
+
+----------------------------------------------------------------------
+other:
+----------------------------------------------------------------------
+
+- axScript
+  the basic stuff only, so that it's possible to create some
+  program flow, conditionals, external functions, variables, ...
+  [almost there...]
+
+-axModular
+  same thing, but for modular audio ala reaktor/synthedit
+  initially with code (connect, compile, execute), but later adding
+  an editor-like thing on top of it (perhaps with "export to .cpp")

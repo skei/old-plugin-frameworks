@@ -1,0 +1,155 @@
+[sketch-pad]
+----------------------------------------------------------------------
+
+start by creating an empty plugin.cpp, and add this:
+
+  class myPlugin : public axFormat
+  {
+    public:
+      myPlugin(axContext* aContext)
+      : axFormat(aContext)
+        {
+        }
+  };
+  AX_ENTRYPOINT(myPlugin)
+
+now you have a compile-able plugin, but it will not work (it
+might crash your host!) just yet...
+to make it work, you first have to tell the host a little about your
+plugin. call these functions in the constructor:
+
+  describe("plugin","vendor","product",0,0x11223344);
+
+this describes your plugin (to the host), and the parameters are:
+
+- name: the name of your plugin, the text string that will appear
+  in the host's list of plugins for example
+- vendor: creator, author. your name. hosts use this differently.
+- product: haven't seen this being used very much, but it's there
+- version: verion of your plugin. i don't know if the host uses
+  this for anything, or if you use it yourself for something. i've
+  always just put 0 here, and haven't had many problems yet.
+- unique id: only a few handful of hosts care about this one. it's
+  for uniquely identifying a plugin, but i think modern hosts uses
+  some other methods, like the name string, or dll file name or
+  whatever. i have not met many problems here either, no matter what
+  i have put here..
+
+setupAudio(2,2);
+
+  tells the host how many audio inputs (first parameter) and outputs
+  (second) you have. note that they are usually paired two and two,
+  and considered stereo pairs. so, a plugin with 6 ouputs, would mean
+  3 stereo outputs.
+  the functions has a third parameter, that defaults to false, which
+  indicates if your plugin is a synth. if false, this is an effect,
+  if true, a synth.
+
+  setupAudio(2,2,true);
+  would create a synth, with stereo inputs (some hosts might
+  not like synthds with audio inputs!) outputs.
+
+setupEditor(width,height);
+
+  call this if your plugins has an editor, or gui. the parameters
+  are the default, initial size. if you're making a non-gui plugin,
+  be sure not to call this, or things might ggo boom when the host
+  starts asking us to open the editor, or telling the non-existant
+  editor to redraw itself, etc...
+
+congratulations! you now have a compile-able, working (but not doing
+anything) plugin!
+
+now the host has your plugin running inside its own process, and will
+call some of your functions at various times when it want the plugin
+to do something, when something has changed, to ask for various info,
+etc. to make your plugin do something when asked, you override as many
+or few as you need of the methods described below. if you don't want
+to do something, or don't care, just don't override the method that
+handles it.
+the methods are:
+
+doStateChange(state)
+doTransportChange(int aState)
+doSetProgram(int aProgram)
+doSetParameter(axParameter* aParameter)
+doProcessMidi(ofs,msg1,msg2,msg3)
+doProcessBlock(inputs,outputs,size) {return false;}
+doProcessSample(inputs,outputs)
+doPostProcess(inputs,outputs,size)
+axWindow* doOpenEditor(context)
+doCloseEditor()
+doIdleEditor()
+
+some other methods you can call:
+
+(preparation)
+
+appendParameter(parameter)
+
+  appends a parameter to the plugin. these can be automated by the
+  host, and can be connected to gui-widgets
+
+setupParameters()
+
+  call this after you have added all the parameters with
+  appendParameter
+  this will count the plugin parameters (see appendParameter), and
+  also call their doSetParameter so that the default/initial values
+  you set in appendParameter are transfered both to the host, and
+  to eventual connected widgets if you have an editor.
+
+(runtime)
+
+updateTimeInfo(void)
+
+  call updateTimeInfo to get updated info about project tempo, current time
+  (in beats, or ppq), samplerate, etc...
+
+sendMidi(offset,msg1,msg2,msg3)
+
+  sends a midi event to the host. call this in doProcessBlock or
+  doProcessSample. note that they are batched together, and sent to
+  the host all at once at the end of the current audioMasterCallback
+  block processing. (post process)
+
+----------------------------------------------------------------------
+
+* how to create a simple plugin
+* adding a gui
+* graphics, bitmaps, blitting
+* debugging
+
+----------------------------------------------------------------------
+
+main classes you should know for plugin-making:
+
+plugin:
+- axFormat
+- axParameter
+editor:
+- axEditor
+- axWidget
+
+----------------------------------------------------------------------
+
+OS           --(doMouseDown)--> WIDGET (*)
+
+                                 |
+                                 | (listener.onChange)
+                                 v
+
+redraw  <--(internal_redraw)--? EDITOR             <---------
+                                                             |
+                     wdg/par-    ?                           |
+                     connection  | (doSetValue)              |
+                                 v                           |
+                                                             |
+VST-HOST      --(doSetValue)--> PARAMETER (*)                |
+                                                             |
+                                 |                           |
+                                 | (listener.onChange)       |
+                                 v                           |
+                                                             |
+myPlugin   <--doSetParameter)-- PLUGIN ?--(paramChanged)-----
+

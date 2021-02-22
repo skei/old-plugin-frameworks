@@ -1,0 +1,22 @@
+#!/bin/bash
+
+./compileall ccernn -vst
+./compileall demo -vst
+./compileall liteon -vst
+./compileall ports -vst
+./compileall test -vst
+
+./compileall ccernn -vst -nogui
+./compileall demo -vst -nogui
+./compileall liteon -vst -nogui
+./compileall ports -vst -nogui
+./compileall test -vst -nogui
+
+./compileall ccernn -ladspa -nogui
+./compileall demo -ladspa -nogui
+./compileall liteon -ladspa -nogui
+./compileall ports -ladspa -nogui
+./compileall test -ladspa -nogui
+
+./compile demo/axDemo.cpp -exe
+
