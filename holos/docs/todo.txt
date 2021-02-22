@@ -1,0 +1,69 @@
+
+----------------------------------------------------------------------
+major missing features from axonlib, in no particular order
+----------------------------------------------------------------------
+
+* the rest of the parameters from axonlib
+  [generally done?]
+
+* --"-- widgets --"--
+
+* ladspa
+  [in progress]
+
+* /test: directory with small(-ish) test apps, individually testing
+  the holos features. and, if possible, a way to run all tests,
+  route all output to file, and compare with a "master" ???
+
+----------------------------------------------------------------------
+code
+----------------------------------------------------------------------
+
+* namespace (?)
+
+  wrap everything in a 'holos' namespace? 'using holos;'
+  to avoid polluting the global namespace?
+
+* h_ prefix
+
+  add a h_ or H_ prefix to absolutely everything?
+  again to avoid name collisions with our other code,
+  a lib-users plugin code, or external libraries..
+
+----------------------------------------------------------------------
+ideas
+----------------------------------------------------------------------
+
+* h_DefaultEditor, parses parameters, set up a default gui, a bit like how a
+  host would create an editor, if your plugin doesn't provide its own.
+  this can be skinned, and made more 'exciting' :-), added features, etc..
+
+  additionally, there could be a constructor that takes a ptr to an array
+  of widget descriptions/info.. a bit like how we were discussing about
+  parameters, and the possibility of defining them in a struct..
+
+* opengl, glx/wgl
+
+  a h_Texture representing a pbuffer (render target in video card memory),
+  this pbuffer can be created from a h_Surface or h_Window.
+  hardware acceleration might be a little problematic,
+  depending on screen vs surface color-depth/format..
+
+* program dumping
+
+  a dummPrograms() function that writes out a .h file that we can
+  directly include in our plugin
+
+----------------------------------------------------------------------
+known (?) major bugs
+----------------------------------------------------------------------
+
+* [partially fixed???]
+  in a dual-display setup in linux, if i drag the editor window to the
+  other screen than energy xt2, close it, and try to re-open it, x
+  freezes completely, and i have to do a AltGr-SysRq-K to kill x.
+  i think it might have something to do with opening a Display connection
+  on a different screen than the parent Window.
+  idea: check createwindow/parent, and reparent()
+  update: might be fixed.. too early to say yet..
+
