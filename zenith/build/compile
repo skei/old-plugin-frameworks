@@ -1,0 +1,15 @@
+# %1 = plugin name (file name, without '.pas')
+
+echo "--------- $1"
+
+echo "{\$include zenith.inc}" > compile.pas
+echo "{\$ifdef Z_LIB} library {\$else} program {\$endif} compile;" >> compile.pas
+echo "uses {heaptrc,} zenith, $1;" >> compile.pas
+echo "{\$include zenith_main.inc}" >> compile.pas
+                                          
+ppc386 ./compile.pas -v0 -Xs -O3 -OpPENTIUM3 -Tlinux -Pi386 -Rintel -MObjFPC -Scgim -l -Fi../src -Fi./units -Fu../src -Fu../src/audio -Fu../src/core -Fu../src/ext -Fu../src/gui -Fu../src/lib -Fu../src/plugin -Fu../plugins -Fu. -FUunits/ -FE../bin/ -dZ_VST -o$1.so
+
+# /usr/bin/ppc386# -v0 
+# -Fu/usr/lib/fpc/2.4.2/units/i386-linux/
+
+

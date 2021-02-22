@@ -1,0 +1,29 @@
+installation:
+
+* zenith
+
+* vst
+
+* cairo
+
+  http://cairographics.org/download/
+  downoad:
+    http://www.gtk.org/download/
+    http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/zlib_1.2.5-2_win32.zip  
+    http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/cairo_1.10.2-2_win32.zip
+    http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/libpng_1.4.3-1_win32.zip
+    http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/freetype_2.4.2-1_win32.zip
+    http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/fontconfig_2.8.0-2_win32.zip
+    http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/expat_2.0.1-1_win32.zip
+  extract:  
+    freetype6.dll
+    libcairo-2.dll
+    libexpat-1.dll
+    libfontconfig-1.dll
+    libpng14-14.dll
+    zlib1.dll
+  copy to:
+    C:\Windows\System32
+    C:\Windows\SysWOW64
+    
+

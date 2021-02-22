@@ -1,0 +1,23 @@
+[clean]
+units = portmidi
+
+[package]
+name = portmidi
+version = 200
+
+[compiler]
+version = 1.2
+sourcedir = .
+unittargetdir= ./package/units/$(CPU_TARGET)-$(OS_TARGET)
+
+[target]
+units = portmidi
+programs = testpmporttime
+
+[require]
+libc=y
+
+[install]
+fpcpackage=y
+
+[prerules]

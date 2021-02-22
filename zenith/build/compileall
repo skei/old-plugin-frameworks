@@ -1,0 +1,18 @@
+
+# todo:
+# - for all (.pas) files in directory, do compile file
+# - file name criteria?
+
+./compile fx_clipper
+./compile fx_eventhorizon
+./compile fx_filter_rbj
+./compile fx_hallreverb
+./compile fx_pitchshift
+./compile fx_sonicenhancer
+./compile fx_sonicmaximizer
+./compile fx_tempodelay
+./compile fx_tilteq
+./compile midi_fibonacci
+./compile midi_transpose
+
+

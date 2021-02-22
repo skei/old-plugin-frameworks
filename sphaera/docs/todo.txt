@@ -1,0 +1,35 @@
+sphaera - sphere :: http://en.wiktionary.org/wiki/sphaera
+(c) 2013 - tor-helge skei (tor.helge.skei@gmail.com)
+
+----------------------------------------------------------------------
+BUGS/ISSUES:
+----------------------------------------------------------------------
+
+* reaper: pause, parameters doesn't update..
+  FProcessing vs processReplacing() ?
+  - partially fixed, but event buffer can fill up..
+    todo:
+  
+* chunks for parameters
+
+* parameter banks, programs  
+
+----------------------------------------------------------------------
+TODO:
+----------------------------------------------------------------------
+
+* redraw optimization..
+  opaque widgets doesn't need to redraw anything behind them
+  (earlier in the hierarchy)
+
+----------------------------------------------------------------------
+CANDO:
+----------------------------------------------------------------------
+
+* modular framework for connecting modules/classes
+* standalone wrapper (libaam/pa)
+* on_gfx ala jesusonic
+* libtcc plugin.. ala jesusonic..
+
+* linux/mac, ladspa/lv2 support
+  - started os/format specific classes into base/impl/class...

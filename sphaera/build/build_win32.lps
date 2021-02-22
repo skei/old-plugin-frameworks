@@ -1,0 +1,1319 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="149">
+      <Unit0>
+        <Filename Value="build_win32.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="build_win32"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="10" Y="13"/>
+        <UsageCount Value="204"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\src\s_editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_editor"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="68"/>
+        <CursorPos X="5" Y="89"/>
+        <UsageCount Value="204"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\src\s_host.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_host"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="23" Y="16"/>
+        <UsageCount Value="204"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\src\s_parameter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_parameter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="87"/>
+        <CursorPos X="8" Y="1"/>
+        <UsageCount Value="204"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\src\s_plugin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_plugin"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="15" Y="22"/>
+        <UsageCount Value="204"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\src\s_program.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_program"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3"/>
+        <CursorPos X="16" Y="2"/>
+        <UsageCount Value="204"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\src\s_widget.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="631"/>
+        <CursorPos X="57" Y="658"/>
+        <UsageCount Value="204"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\src\s_window.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_window"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="71" Y="345"/>
+        <UsageCount Value="204"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\src\s_array.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_array"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="55"/>
+        <CursorPos X="15" Y="92"/>
+        <UsageCount Value="204"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\src\s_memory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_memory"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="18"/>
+        <CursorPos X="18" Y="1"/>
+        <UsageCount Value="204"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\src\s_point.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_point"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="18" Y="1"/>
+        <UsageCount Value="204"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\src\s_rect.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_rect"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="306"/>
+        <CursorPos X="17" Y="31"/>
+        <UsageCount Value="204"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\src\s_string.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_string"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="573"/>
+        <CursorPos X="1" Y="638"/>
+        <UsageCount Value="204"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\src\s_util.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_util"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="64"/>
+        <CursorPos X="11" Y="19"/>
+        <UsageCount Value="204"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\src\s_eventqueue.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_eventqueue"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="16"/>
+        <CursorPos X="23" Y="34"/>
+        <UsageCount Value="201"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\src\s_math.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_math"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="434"/>
+        <CursorPos X="25" Y="446"/>
+        <UsageCount Value="203"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\src\s_random.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_random"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="175"/>
+        <CursorPos X="47" Y="166"/>
+        <UsageCount Value="203"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\src\s_types.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_types"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="13" Y="8"/>
+        <UsageCount Value="202"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\src\s_const.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_const"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="176"/>
+        <CursorPos X="30" Y="206"/>
+        <UsageCount Value="205"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\src\s_dsp_rbj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_rbj"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="53"/>
+        <CursorPos X="18" Y="73"/>
+        <UsageCount Value="205"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\src\s_pitchshift.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_pitchshift"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="18"/>
+        <CursorPos X="11" Y="437"/>
+        <UsageCount Value="205"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\src\s_libaam.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_libaam"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="23"/>
+        <UsageCount Value="204"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\src\s_library.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_library"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="19"/>
+        <UsageCount Value="204"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\src\s_libtcc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_libtcc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="61"/>
+        <CursorPos X="72" Y="164"/>
+        <UsageCount Value="204"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\src\s_des.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_des"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="49"/>
+        <CursorPos X="18" Y="1"/>
+        <UsageCount Value="203"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\src\s_diffiehellman.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_diffiehellman"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="2"/>
+        <UsageCount Value="203"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\src\s_isaac.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_isaac"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="18" Y="1"/>
+        <UsageCount Value="203"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\src\s_lzo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_lzo"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="222"/>
+        <CursorPos X="18" Y="1"/>
+        <UsageCount Value="203"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\src\s_color.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_color"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="50"/>
+        <CursorPos X="18" Y="15"/>
+        <UsageCount Value="203"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\src\s_console.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_console"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="52"/>
+        <CursorPos X="49" Y="8"/>
+        <UsageCount Value="203"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\src\s_inifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_inifile"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="25"/>
+        <CursorPos X="18" Y="1"/>
+        <UsageCount Value="203"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\src\s_markov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_markov"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="55" Y="12"/>
+        <UsageCount Value="203"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\src\s_fft.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_fft"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="337"/>
+        <CursorPos X="45" Y="19"/>
+        <UsageCount Value="203"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\src\s_freeverb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_freeverb"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="656"/>
+        <CursorPos X="18" Y="1"/>
+        <UsageCount Value="203"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\src\s_rubberband.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_rubberband"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="119"/>
+        <CursorPos X="17" Y="1"/>
+        <UsageCount Value="203"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\src\s_module.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_module"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="83"/>
+        <UsageCount Value="205"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\plugins\fx_filter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_filter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="11"/>
+        <UsageCount Value="203"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\src\s_basepath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_basepath"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="34"/>
+        <CursorPos X="15" Y="55"/>
+        <UsageCount Value="201"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\src\sphaera.inc"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="2" Y="20"/>
+        <UsageCount Value="204"/>
+        <Loaded Value="True"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="..\src\sphaera_vst.inc"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="6"/>
+        <UsageCount Value="200"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="..\plugins\fx_unmatched.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_unmatched"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="17"/>
+        <CursorPos X="5" Y="38"/>
+        <UsageCount Value="205"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="..\plugins\fx_transientcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_transientcontroller"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="62"/>
+        <CursorPos X="31" Y="87"/>
+        <UsageCount Value="200"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\plugins\fx_sonicmaximizer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_sonicmaximizer"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="65"/>
+        <CursorPos X="33" Y="89"/>
+        <UsageCount Value="205"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="..\plugins\fx_sonicenhancer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_sonicenhancer"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="108"/>
+        <CursorPos X="24" Y="129"/>
+        <UsageCount Value="203"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="..\plugins\fx_clipper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_clipper"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="14"/>
+        <CursorPos X="17" Y="24"/>
+        <UsageCount Value="205"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\plugins\fx_tempodelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_tempodelay"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="9"/>
+        <CursorPos X="21" Y="30"/>
+        <UsageCount Value="203"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="..\plugins\fx_hallreverb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_hallreverb"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="27"/>
+        <CursorPos X="39" Y="49"/>
+        <UsageCount Value="203"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="..\plugins\fx_filter_rbj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_filter_rbj"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="58"/>
+        <CursorPos X="31" Y="75"/>
+        <UsageCount Value="204"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="..\plugins\fx_pitchshift.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_pitchshift"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="101"/>
+        <CursorPos X="37" Y="133"/>
+        <UsageCount Value="203"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="..\plugins\midi_fibonacci.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_fibonacci"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="74"/>
+        <CursorPos X="29" Y="95"/>
+        <UsageCount Value="203"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="..\plugins\midi_transpose.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_transpose"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="20"/>
+        <UsageCount Value="202"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="..\plugins\fx_gain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_gain"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="18"/>
+        <UsageCount Value="202"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="..\plugins\fx_eventhorizon.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_eventhorizon"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="16"/>
+        <UsageCount Value="202"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\plugins\fx_tilteq.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_tilteq"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="100"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="202"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="..\plugins\midi_syncdelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_syncdelay"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="126"/>
+        <CursorPos X="15" Y="147"/>
+        <UsageCount Value="202"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="..\plugins\fx_dynamic.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_dynamic"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="56"/>
+        <CursorPos X="42" Y="77"/>
+        <UsageCount Value="202"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="..\plugins\fx_dist3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_dist3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="101"/>
+        <CursorPos X="58" Y="114"/>
+        <UsageCount Value="201"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="..\plugins\fx_fracdelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_fracdelay"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="93"/>
+        <CursorPos X="66" Y="90"/>
+        <UsageCount Value="201"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="..\plugins\fx_blur.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_blur"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="202"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="..\plugins\fx_grains.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_grains"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="201"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="..\src\sphaera_exe.inc"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="2"/>
+        <UsageCount Value="201"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="..\src\s_application.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_application"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="24" Y="27"/>
+        <UsageCount Value="200"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="..\plugins\fx_cutter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_cutter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="53"/>
+        <CursorPos X="71" Y="74"/>
+        <UsageCount Value="206"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="..\plugins\fx_vumeter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_vumeter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="18"/>
+        <CursorPos X="5" Y="39"/>
+        <UsageCount Value="200"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="..\src\s_surface.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_surface"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="17"/>
+        <UsageCount Value="203"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="..\src\s_canvas_cairo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_canvas_cairo"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="14"/>
+        <UsageCount Value="203"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="..\src\s_widget_button.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_button"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="92"/>
+        <CursorPos X="14" Y="126"/>
+        <UsageCount Value="201"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="..\apps\app_gui1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="app_gui1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="15"/>
+        <CursorPos X="37" Y="67"/>
+        <UsageCount Value="201"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="..\src\s_widget_panel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_panel"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="30"/>
+        <CursorPos X="14" Y="64"/>
+        <UsageCount Value="201"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="..\src\s_widget_slider.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_slider"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="14" Y="82"/>
+        <UsageCount Value="200"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="..\src\s_widget_image.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_image"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="46"/>
+        <CursorPos X="48" Y="76"/>
+        <UsageCount Value="204"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="..\src\s_widget_knob.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_knob"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="74"/>
+        <CursorPos X="1" Y="115"/>
+        <UsageCount Value="204"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="..\src\s_widget_image_knob.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_image_knob"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="74"/>
+        <CursorPos X="22" Y="108"/>
+        <UsageCount Value="200"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="..\src\s_widget_meter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_meter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="41"/>
+        <CursorPos X="14" Y="74"/>
+        <UsageCount Value="200"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="..\src\s_widget_wave.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_wave"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="95"/>
+        <CursorPos X="14" Y="126"/>
+        <UsageCount Value="200"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="..\src\s_widget_text.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_text"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="44"/>
+        <CursorPos X="44" Y="66"/>
+        <UsageCount Value="200"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="..\plugins\plug_test1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="plug_test1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="160"/>
+        <CursorPos X="40" Y="194"/>
+        <UsageCount Value="204"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="..\src\s_lock.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_lock"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="28"/>
+        <CursorPos X="1" Y="2"/>
+        <UsageCount Value="206"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="..\plugins\plug_minimal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="plug_minimal"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="31" Y="12"/>
+        <UsageCount Value="200"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="..\src\s_widget_value.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_value"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="40"/>
+        <CursorPos X="14" Y="178"/>
+        <UsageCount Value="200"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="..\src\s_dsp_rc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_rc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="48"/>
+        <CursorPos X="32" Y="75"/>
+        <UsageCount Value="200"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="..\src\s_dsp_dcf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_dcf"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="11" Y="51"/>
+        <UsageCount Value="200"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="..\src\s_dsp_svf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_svf"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="5"/>
+        <CursorPos X="18" Y="29"/>
+        <UsageCount Value="200"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="..\src\s_dsp_osc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_osc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="68"/>
+        <CursorPos X="1" Y="63"/>
+        <UsageCount Value="201"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="..\src\s_dsp_env.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_env"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="108"/>
+        <CursorPos X="1" Y="4"/>
+        <UsageCount Value="201"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="..\apps\app_modular.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="app_modular"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="16"/>
+        <CursorPos X="26" Y="31"/>
+        <UsageCount Value="199"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="..\plugins\fx_resonantlowpass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_resonantlowpass"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="193"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="..\plugins\fx_applefilter12db.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_applefilter12db"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="31"/>
+        <UsageCount Value="171"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="..\plugins\fx_pitch.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_pitch"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="9" Y="5"/>
+        <UsageCount Value="170"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="..\src\s_plugin_vst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_plugin_vst"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="46"/>
+        <CursorPos X="1" Y="806"/>
+        <UsageCount Value="152"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="..\src\s_reaper_ext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_reaper_ext"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="300"/>
+        <CursorPos X="11" Y="306"/>
+        <UsageCount Value="148"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="..\src\s_plugin_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_plugin_base"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="68"/>
+        <CursorPos X="7" Y="54"/>
+        <UsageCount Value="131"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="..\src\s_editor_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_editor_base"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="98"/>
+        <CursorPos X="42" Y="32"/>
+        <UsageCount Value="120"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="..\src\s_debug.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_debug"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="42" Y="64"/>
+        <UsageCount Value="110"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="..\src\s_canvas_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_canvas_base"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="12" Y="13"/>
+        <UsageCount Value="108"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="..\src\s_canvas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_canvas"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="19"/>
+        <UsageCount Value="108"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="..\src\s_base.pas"/>
+        <UnitName Value="s_base"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="274"/>
+        <CursorPos X="1" Y="274"/>
+        <UsageCount Value="28"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="..\src\s_widget_button_group.pas"/>
+        <UnitName Value="s_widget_button_group"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="78"/>
+        <UsageCount Value="100"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="..\apps\app_test1.pas"/>
+        <UnitName Value="app_test1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="181"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="..\src\s_widget_drag.pas"/>
+        <UnitName Value="s_widget_drag"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="105"/>
+        <CursorPos X="3" Y="146"/>
+        <UsageCount Value="194"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="..\src\s_widget_click.pas"/>
+        <UnitName Value="s_widget_click"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="181"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="..\src\s_paint_color.pas"/>
+        <UnitName Value="s_paint_color"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="56"/>
+        <UsageCount Value="71"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="..\src\s_paint_value.pas"/>
+        <UnitName Value="s_paint_value"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="41"/>
+        <CursorPos X="7" Y="65"/>
+        <UsageCount Value="71"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="..\src\s_paint_slider.pas"/>
+        <UnitName Value="s_paint_slider"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="59"/>
+        <CursorPos X="3" Y="97"/>
+        <UsageCount Value="70"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="..\src\s_paint_knob.pas"/>
+        <UnitName Value="s_paint_knob"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="81"/>
+        <CursorPos X="1" Y="118"/>
+        <UsageCount Value="70"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="..\src\s_paint_wave.pas"/>
+        <UnitName Value="s_paint_wave"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="90"/>
+        <CursorPos X="1" Y="125"/>
+        <UsageCount Value="70"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="..\src\s_paint_meter.pas"/>
+        <UnitName Value="s_paint_meter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="25"/>
+        <CursorPos X="1" Y="64"/>
+        <UsageCount Value="70"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="..\src\s_paint_image.pas"/>
+        <UnitName Value="s_paint_image"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="25"/>
+        <CursorPos X="3" Y="63"/>
+        <UsageCount Value="54"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="..\src\s_paint_image_strip.pas"/>
+        <UnitName Value="s_paint_image_strip"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="58"/>
+        <CursorPos X="1" Y="96"/>
+        <UsageCount Value="41"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="..\src\s_paint_buttons.pas"/>
+        <UnitName Value="s_paint_buttons"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="19"/>
+        <UsageCount Value="18"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="..\src\s_paint_button.pas"/>
+        <UnitName Value="s_paint_button"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="55"/>
+      </Unit110>
+      <Unit111>
+        <Filename Value="..\src\s_cairo.pas"/>
+        <UnitName Value="s_cairo"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="24" Y="21"/>
+        <UsageCount Value="166"/>
+      </Unit111>
+      <Unit112>
+        <Filename Value="..\src\s_painter.pas"/>
+        <UnitName Value="s_painter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="168"/>
+      </Unit112>
+      <Unit113>
+        <Filename Value="..\src\s_control.pas"/>
+        <UnitName Value="s_control"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="70"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="..\src\s_panel.pas"/>
+        <UnitName Value="s_panel"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="9" Y="13"/>
+        <UsageCount Value="68"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="..\ext\DAEffect.pas"/>
+        <UnitName Value="DAEffect"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="61"/>
+        <CursorPos X="75" Y="96"/>
+        <UsageCount Value="25"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="..\ext\DAEffectX.pas"/>
+        <UnitName Value="DAEffectX"/>
+        <UsageCount Value="25"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="..\ext\DAudioEffect.pas"/>
+        <UnitName Value="DAudioEffect"/>
+        <UsageCount Value="25"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="..\ext\DAudioEffectX.pas"/>
+        <UnitName Value="DAudioEffectX"/>
+        <UsageCount Value="25"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="..\ext\DVstCommon.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="25"/>
+      </Unit119>
+      <Unit120>
+        <Filename Value="..\ext\DVstFxStore.pas"/>
+        <UnitName Value="DVstFxStore"/>
+        <UsageCount Value="25"/>
+      </Unit120>
+      <Unit121>
+        <Filename Value="..\ext\DVSTUtils.pas"/>
+        <UnitName Value="DVSTUtils"/>
+        <UsageCount Value="25"/>
+      </Unit121>
+      <Unit122>
+        <Filename Value="C:\lazarus\fpc\2.6.0\source\rtl\win\wininc\base.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="78"/>
+        <CursorPos X="6" Y="99"/>
+        <UsageCount Value="9"/>
+      </Unit122>
+      <Unit123>
+        <Filename Value="C:\lazarus\fpc\2.6.0\source\rtl\win\wininc\func.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="645"/>
+        <CursorPos X="10" Y="666"/>
+        <UsageCount Value="7"/>
+      </Unit123>
+      <Unit124>
+        <Filename Value="C:\lazarus\fpc\2.6.0\source\rtl\inc\threadh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="126"/>
+        <CursorPos X="59" Y="149"/>
+        <UsageCount Value="7"/>
+      </Unit124>
+      <Unit125>
+        <Filename Value="C:\lazarus\fpc\2.6.0\source\rtl\win\sysosh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="22"/>
+        <UsageCount Value="9"/>
+      </Unit125>
+      <Unit126>
+        <Filename Value="..\src\s_dsp_compress.pas"/>
+        <UnitName Value="s_dsp_compress"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="3"/>
+      </Unit126>
+      <Unit127>
+        <Filename Value="..\plugins\syn_mono1.pas"/>
+        <UnitName Value="syn_mono1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="36" Y="22"/>
+        <UsageCount Value="5"/>
+      </Unit127>
+      <Unit128>
+        <Filename Value="..\src\s_virtualmachine.pas"/>
+        <UnitName Value="s_virtualmachine"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="4"/>
+      </Unit128>
+      <Unit129>
+        <Filename Value="..\ext\vst\DAEffect.pas"/>
+        <UnitName Value="DAEffect"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="61"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="7"/>
+      </Unit129>
+      <Unit130>
+        <Filename Value="..\ext\vst\DAEffectX.pas"/>
+        <UnitName Value="DAEffectX"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="710"/>
+        <CursorPos X="14" Y="169"/>
+        <UsageCount Value="7"/>
+      </Unit130>
+      <Unit131>
+        <Filename Value="knob1.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="1"/>
+      </Unit131>
+      <Unit132>
+        <Filename Value="C:\lazarus\fpc\2.6.0\source\packages\cairo\src\cairo.pp"/>
+        <UnitName Value="Cairo"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="282"/>
+        <CursorPos X="3" Y="303"/>
+        <UsageCount Value="1"/>
+      </Unit132>
+      <Unit133>
+        <Filename Value="..\src\s_list.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_list"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="16"/>
+        <UsageCount Value="52"/>
+      </Unit133>
+      <Unit134>
+        <Filename Value="..\src\s_voicemanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_voicemanager"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="129"/>
+        <CursorPos X="1" Y="353"/>
+        <UsageCount Value="50"/>
+      </Unit134>
+      <Unit135>
+        <Filename Value="..\src\s_thread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_thread"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="57"/>
+        <CursorPos X="1" Y="124"/>
+        <UsageCount Value="48"/>
+      </Unit135>
+      <Unit136>
+        <Filename Value="..\src\s_quaternion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_quaternion"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="31" Y="8"/>
+        <UsageCount Value="48"/>
+      </Unit136>
+      <Unit137>
+        <Filename Value="..\src\s_wine.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_wine"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="48"/>
+      </Unit137>
+      <Unit138>
+        <Filename Value="..\src\s_dsp_interpolate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_interpolate"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="95"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="48"/>
+      </Unit138>
+      <Unit139>
+        <Filename Value="..\src\s_dsp_onepole.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_onepole"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="93"/>
+        <CursorPos X="27" Y="97"/>
+        <UsageCount Value="48"/>
+      </Unit139>
+      <Unit140>
+        <Filename Value="..\src\s_dsp_rms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_rms"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="48"/>
+      </Unit140>
+      <Unit141>
+        <Filename Value="..\plugins\fx_moog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_moog"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="169"/>
+        <CursorPos X="32" Y="234"/>
+        <UsageCount Value="43"/>
+      </Unit141>
+      <Unit142>
+        <Filename Value="..\src\s_surface_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_surface_base"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="16" Y="80"/>
+        <UsageCount Value="33"/>
+      </Unit142>
+      <Unit143>
+        <Filename Value="..\src\s_surface_cairo_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_surface_cairo_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="188"/>
+        <CursorPos X="80" Y="197"/>
+        <UsageCount Value="33"/>
+      </Unit143>
+      <Unit144>
+        <Filename Value="..\src\sphaera_all.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="sphaera_all"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="6"/>
+        <CursorPos X="8" Y="32"/>
+        <UsageCount Value="28"/>
+      </Unit144>
+      <Unit145>
+        <Filename Value="..\plugins\syn_poly.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="syn_poly"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="9" Y="14"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit145>
+      <Unit146>
+        <Filename Value="..\src\s_voice.pas"/>
+        <UnitName Value="s_voice"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="20"/>
+      </Unit146>
+      <Unit147>
+        <Filename Value="..\src\s_voice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_voice"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="22"/>
+        <CursorPos X="30" Y="35"/>
+        <UsageCount Value="22"/>
+      </Unit147>
+      <Unit148>
+        <Filename Value="..\src\s_voice_simple1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_voice_simple1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="88"/>
+        <CursorPos X="20" Y="121"/>
+        <UsageCount Value="22"/>
+      </Unit148>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="..\src\s_math.pas"/>
+        <Caret Line="355" Column="61" TopLine="334"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\src\s_math.pas"/>
+        <Caret Line="356" Column="1" TopLine="335"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\src\s_math.pas"/>
+        <Caret Line="57" Column="1" TopLine="43"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\src\s_math.pas"/>
+        <Caret Line="355" Column="1" TopLine="314"/>
+      </Position4>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

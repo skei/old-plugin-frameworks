@@ -1,0 +1,1417 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <Title Value="build_win32"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="5" Active="vst debug">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="exe debug">
+        <CompilerOptions>
+          <Version Value="9"/>
+          <Target>
+            <Filename Value="../bin/zenith"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="../src;$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../src;../src/audio;../src/core;../src/ext;../src/gui;../src/lib;../src/plugin;../plugins"/>
+            <UnitOutputDirectory Value="units"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleMacros Value="True"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <TargetProcessor Value="pentium3"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+          </CodeGeneration>
+          <Other>
+            <CompilerMessages>
+              <UseMsgFile Value="True"/>
+            </CompilerMessages>
+            <CustomOptions Value="-dZ_EXE"/>
+            <CompilerPath Value="$(CompPath)"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="exe release">
+        <CompilerOptions>
+          <Version Value="9"/>
+          <Target>
+            <Filename Value="../bin/zenith"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="../src;$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../src;../src/audio;../src/core;../src/ext;../src/gui;../src/lib;../src/plugin;../plugins"/>
+            <UnitOutputDirectory Value="units"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleMacros Value="True"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <TargetProcessor Value="pentium3"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CompilerMessages>
+              <UseMsgFile Value="True"/>
+            </CompilerMessages>
+            <CustomOptions Value="-dZ_EXE"/>
+            <CompilerPath Value="$(CompPath)"/>
+          </Other>
+        </CompilerOptions>
+      </Item3>
+      <Item4 Name="vst debug">
+        <CompilerOptions>
+          <Version Value="9"/>
+          <Target>
+            <Filename Value="../bin/zenith"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="../src;$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../src;../src/audio;../src/core;../src/ext;../src/gui;../src/lib;../src/plugin;../plugins"/>
+            <UnitOutputDirectory Value="units"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleMacros Value="True"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <TargetProcessor Value="pentium3"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+          </CodeGeneration>
+          <Linking>
+            <Options>
+              <ExecutableType Value="Library"/>
+            </Options>
+          </Linking>
+          <Other>
+            <CompilerMessages>
+              <UseMsgFile Value="True"/>
+            </CompilerMessages>
+            <CustomOptions Value="-dZ_VST"/>
+            <CompilerPath Value="$(CompPath)"/>
+          </Other>
+        </CompilerOptions>
+      </Item4>
+      <Item5 Name="vst release">
+        <CompilerOptions>
+          <Version Value="9"/>
+          <Target>
+            <Filename Value="../bin/zenith"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="../src;$(ProjOutDir)"/>
+            <OtherUnitFiles Value="../src;../src/audio;../src/core;../src/ext;../src/gui;../src/lib;../src/plugin;../plugins"/>
+            <UnitOutputDirectory Value="units"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+            <SyntaxOptions>
+              <CStyleMacros Value="True"/>
+              <UseAnsiStrings Value="False"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <TargetProcessor Value="pentium3"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+          </Linking>
+          <Other>
+            <CompilerMessages>
+              <UseMsgFile Value="True"/>
+            </CompilerMessages>
+            <CustomOptions Value="-dZ_VST"/>
+            <CompilerPath Value="$(CompPath)"/>
+          </Other>
+        </CompilerOptions>
+      </Item5>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <Units Count="123">
+      <Unit0>
+        <Filename Value="build_win32.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="build_win32"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="17" Y="21"/>
+        <UsageCount Value="151"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="../src/zenith_main.inc"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="6"/>
+        <UsageCount Value="151"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../src/zenith.inc"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="6"/>
+        <UsageCount Value="151"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../src/zenith.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="zenith"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="5"/>
+        <UsageCount Value="151"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../src/core/z_format.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_format"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="43" Y="20"/>
+        <UsageCount Value="151"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../src/core/z_format_exe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_format_exe"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="78"/>
+        <CursorPos X="33" Y="24"/>
+        <UsageCount Value="151"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../src/core/z_format_ladspa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_format_ladspa"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../src/core/z_format_vst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_format_vst"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="5"/>
+        <CursorPos X="35" Y="142"/>
+        <UsageCount Value="151"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../src/core/z_interface.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_interface"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="39" Y="9"/>
+        <UsageCount Value="151"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../src/core/z_interface_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_interface_linux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3"/>
+        <CursorPos X="5" Y="45"/>
+        <UsageCount Value="151"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../src/core/z_interface_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_interface_win32"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="20"/>
+        <CursorPos X="10" Y="47"/>
+        <UsageCount Value="151"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../src/core/z_platform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_platform"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="38" Y="9"/>
+        <UsageCount Value="151"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../src/core/z_platform_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_platform_linux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="4"/>
+        <CursorPos X="22" Y="33"/>
+        <UsageCount Value="151"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../src/core/z_platform_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_platform_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="28" Y="19"/>
+        <UsageCount Value="151"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../src/ext/DAEffect.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DAEffect"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="69"/>
+        <CursorPos X="5" Y="93"/>
+        <UsageCount Value="151"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../src/ext/DAEffectX.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DAEffectX"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="86"/>
+        <CursorPos X="48" Y="114"/>
+        <UsageCount Value="151"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../src/ext/DVstCommon.inc"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="151"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../src/ext/DVstFxStore.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DVstFxStore"/>
+        <UsageCount Value="151"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../src/ext/DVSTUtils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DVSTUtils"/>
+        <UsageCount Value="151"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../src/ext/flqueue.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="flqueue"/>
+        <UsageCount Value="151"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../src/gui/z_bitmap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_bitmap"/>
+        <UsageCount Value="151"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../src/gui/z_cairo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_cairo"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="101"/>
+        <CursorPos X="17" Y="120"/>
+        <UsageCount Value="151"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../src/gui/z_cairo_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_cairo_linux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="4"/>
+        <CursorPos X="27" Y="44"/>
+        <UsageCount Value="151"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../src/gui/z_cairo_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_cairo_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="4"/>
+        <CursorPos X="29" Y="59"/>
+        <UsageCount Value="151"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../src/gui/z_canvas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_canvas"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="35" Y="9"/>
+        <UsageCount Value="151"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="../src/gui/z_canvas_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_canvas_linux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../src/gui/z_canvas_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_canvas_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../src/gui/z_container.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_container"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="20" Y="21"/>
+        <UsageCount Value="151"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="../src/gui/z_gui_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_gui_base"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="16"/>
+        <CursorPos X="5" Y="40"/>
+        <UsageCount Value="151"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="../src/gui/z_image.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_image"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="13"/>
+        <UsageCount Value="151"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="../src/gui/z_image_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_image_linux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="../src/gui/z_image_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_image_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="../src/gui/z_opengl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_opengl"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="../src/gui/z_opengl_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_opengl_linux"/>
+        <UsageCount Value="151"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="../src/gui/z_opengl_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_opengl_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="../src/gui/z_painter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_painter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="../src/gui/z_surface.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_surface"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="13"/>
+        <UsageCount Value="151"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="../src/gui/z_surface_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_surface_linux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="../src/gui/z_surface_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_surface_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="../src/gui/z_widget.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_widget"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="51" Y="15"/>
+        <UsageCount Value="151"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="../src/gui/z_window.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_window"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="../src/gui/z_window_linux.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_window_linux"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="373"/>
+        <CursorPos X="40" Y="403"/>
+        <UsageCount Value="151"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="../src/gui/z_window_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_window_win32"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="7" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="../src/lib/z_array.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_array"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="../src/lib/z_color.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_color"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="../src/lib/z_console.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_console"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="../src/lib/z_cpu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_cpu"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="20"/>
+        <UsageCount Value="151"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="../src/lib/z_debug.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_debug"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="34" Y="144"/>
+        <UsageCount Value="151"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="../src/lib/z_const.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_const"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="72"/>
+        <CursorPos X="14" Y="83"/>
+        <UsageCount Value="151"/>
+        <Loaded Value="True"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="../src/lib/z_events.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_events"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="49"/>
+        <CursorPos X="52" Y="73"/>
+        <UsageCount Value="151"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="../src/lib/z_file.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_file"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="38" Y="17"/>
+        <UsageCount Value="151"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="../src/lib/z_logfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_logfile"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="../src/lib/z_math.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_math"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="../src/lib/z_memory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_memory"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="../src/lib/z_object.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_object"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="../src/lib/z_point.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_point"/>
+        <UsageCount Value="151"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="../src/lib/z_queue.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_queue"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="../src/lib/z_queue_test.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_queue"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="312"/>
+        <CursorPos X="31" Y="21"/>
+        <UsageCount Value="151"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="../src/lib/z_rect.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_rect"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="235"/>
+        <CursorPos X="16" Y="273"/>
+        <UsageCount Value="151"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="../src/lib/z_stdlib.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_stdlib"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="../src/lib/z_string.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_string"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="9"/>
+        <UsageCount Value="151"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="../src/lib/z_system.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_system"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="39" Y="22"/>
+        <UsageCount Value="151"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="../src/lib/z_thread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_thread"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="../src/lib/z_util.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_util"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="../src/plugin/z_descriptor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_descriptor"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="9"/>
+        <UsageCount Value="151"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="../src/plugin/z_descriptor_exe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_descriptor_exe"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="28"/>
+        <UsageCount Value="151"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="../src/plugin/z_descriptor_ladspa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_descriptor_ladspa"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="../src/plugin/z_descriptor_vst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_descriptor_vst"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="23" Y="25"/>
+        <UsageCount Value="151"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="../src/plugin/z_editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_editor"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="34" Y="11"/>
+        <UsageCount Value="151"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="../src/plugin/z_editor_exe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_editor_exe"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="41"/>
+        <UsageCount Value="151"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="../src/plugin/z_editor_ladspa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_editor_ladspa"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="../src/plugin/z_editor_vst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_editor_vst"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="28" Y="26"/>
+        <UsageCount Value="151"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="../src/plugin/z_host.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_host"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="22"/>
+        <UsageCount Value="151"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="../src/plugin/z_host_exe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_host_exe"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="14"/>
+        <CursorPos X="12" Y="38"/>
+        <UsageCount Value="151"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="../src/plugin/z_host_ladspa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_host_ladspa"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="18"/>
+        <UsageCount Value="151"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="../src/plugin/z_host_vst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_host_vst"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="160"/>
+        <CursorPos X="1" Y="353"/>
+        <UsageCount Value="151"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="../src/plugin/z_instance.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_instance"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="12"/>
+        <UsageCount Value="151"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="../src/plugin/z_instance_exe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_instance_exe"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="17"/>
+        <UsageCount Value="151"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="../src/plugin/z_instance_ladspa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_instance_ladspa"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="151"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="../src/plugin/z_instance_vst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_instance_vst"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="28"/>
+        <CursorPos X="1" Y="47"/>
+        <UsageCount Value="151"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="../src/plugin/z_parameter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_parameter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="274"/>
+        <CursorPos X="1" Y="321"/>
+        <UsageCount Value="151"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="../src/plugin/z_plugin_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_plugin_base"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="140"/>
+        <CursorPos X="17" Y="159"/>
+        <UsageCount Value="151"/>
+        <Loaded Value="True"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="../src/plugin/z_program.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_program"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="36" Y="24"/>
+        <UsageCount Value="151"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="../test/test1.pas"/>
+        <UnitName Value="test1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="14"/>
+        <UsageCount Value="3"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="../plugins/test1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="test1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="67"/>
+        <CursorPos X="32" Y="37"/>
+        <UsageCount Value="151"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="../src/lib/z_flags.pas"/>
+        <UnitName Value="z_flags"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="14"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="../plugins/fx_sonicmaximizer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_sonicmaximizer"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="25"/>
+        <CursorPos X="12" Y="64"/>
+        <UsageCount Value="115"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="../plugins/port_sonic_enhancer.pas"/>
+        <UnitName Value="port_sonic_enhancer"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="7" Y="1"/>
+        <UsageCount Value="23"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="../plugins/fx_tilteq.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_tilteq"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="74"/>
+        <CursorPos X="37" Y="106"/>
+        <UsageCount Value="110"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="../plugins/fx_4pole_filter.pas"/>
+        <UnitName Value="fx_4pole_filter"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="12"/>
+        <UsageCount Value="16"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="../plugins/fx_clipper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_clipper"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="51"/>
+        <CursorPos X="41" Y="81"/>
+        <UsageCount Value="110"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="../plugins/fx_filter_rc.pas"/>
+        <UsageCount Value="15"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="../plugins/fx_pitchshift.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_pitchshift"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="25"/>
+        <CursorPos X="32" Y="112"/>
+        <UsageCount Value="110"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="../plugins/fx_hallreverb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_hallreverb"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="10"/>
+        <CursorPos X="27" Y="28"/>
+        <UsageCount Value="110"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="../src/audio/z_pitchshift.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_pitchshift"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="34" Y="29"/>
+        <UsageCount Value="110"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="../src/audio/z_beatdetector.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_beatdetector"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="70"/>
+        <CursorPos X="3" Y="91"/>
+        <UsageCount Value="110"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="../src/audio/z_graph.pas"/>
+        <UnitName Value="z_graph"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="36"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="../src/audio/z_modular.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_modular"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="45"/>
+        <CursorPos X="28" Y="99"/>
+        <UsageCount Value="110"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="../src/lib/z_types.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_types"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="68" Y="10"/>
+        <UsageCount Value="106"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="../plugins/fx_tempodelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_tempodelay"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="53"/>
+        <CursorPos X="81" Y="134"/>
+        <UsageCount Value="105"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="../src/audio/z_filter_rbj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_filter_rbj"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="86"/>
+        <CursorPos X="58" Y="6"/>
+        <UsageCount Value="104"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="../plugins/fx_filter_rbj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_filter_rbj"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="40"/>
+        <CursorPos X="31" Y="119"/>
+        <UsageCount Value="89"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="../src/ext/T4PoleUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="T4PoleUnit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="92"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="100"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="../src/ext/smbPitchShift.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="smbPitchShift"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="22" Y="12"/>
+        <UsageCount Value="100"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="../src/lib/z_markov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_markov"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="100"/>
+        <CursorPos X="19" Y="363"/>
+        <UsageCount Value="99"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="../plugins/minimal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="minimal"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="19"/>
+        <UsageCount Value="92"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="../plugins/midi_transpose.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_transpose"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="166"/>
+        <CursorPos X="25" Y="173"/>
+        <UsageCount Value="89"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="../src/lib/z_random.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_random"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="12"/>
+        <UsageCount Value="61"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="../plugins/fx_sonicenhancer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_sonicenhancer"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="4" Y="20"/>
+        <UsageCount Value="47"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="../src/plugin/z_plugin_js.pas"/>
+        <UnitName Value="z_plugin_js"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="20"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="../plugins/test_js.pas"/>
+        <UnitName Value="test_js"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="49" Y="24"/>
+        <UsageCount Value="20"/>
+      </Unit110>
+      <Unit111>
+        <Filename Value="../src/ext/DAudioEffect.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="36"/>
+      </Unit111>
+      <Unit112>
+        <Filename Value="../src/ext/DAudioEffectX.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="36"/>
+      </Unit112>
+      <Unit113>
+        <Filename Value="../src/audio/z_freeverb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_freeverb"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="650"/>
+        <CursorPos X="1" Y="697"/>
+        <UsageCount Value="34"/>
+      </Unit113>
+      <Unit114>
+        <Filename Value="../src/audio/z_rubberband.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_rubberband"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="113"/>
+        <CursorPos X="1" Y="160"/>
+        <UsageCount Value="34"/>
+      </Unit114>
+      <Unit115>
+        <Filename Value="../src/audio/z_fft.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_fft"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="23" Y="14"/>
+        <UsageCount Value="34"/>
+      </Unit115>
+      <Unit116>
+        <Filename Value="../src/lib/z_inifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="z_inifile"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="50" Y="40"/>
+        <UsageCount Value="27"/>
+      </Unit116>
+      <Unit117>
+        <Filename Value="/usr/share/fpcsrc/2.4.2/packages/fcl-base/src/inifiles.pp"/>
+        <UnitName Value="IniFiles"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="144"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="10"/>
+      </Unit117>
+      <Unit118>
+        <Filename Value="../../../../../../lazarus/fpc/2.4.4/source/rtl/win/wininc/base.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="80"/>
+        <CursorPos X="29" Y="99"/>
+        <UsageCount Value="10"/>
+      </Unit118>
+      <Unit119>
+        <Filename Value="../../../../../../lazarus/fpc/2.4.4/source/rtl/win/sysosh.inc"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3"/>
+        <CursorPos X="22" Y="22"/>
+        <UsageCount Value="10"/>
+      </Unit119>
+      <Unit120>
+        <Filename Value="../plugins/midi_fibonacci.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="23"/>
+      </Unit120>
+      <Unit121>
+        <Filename Value="../plugins/fx_eventhorizon.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="23"/>
+      </Unit121>
+      <Unit122>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_syncdelay"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="114"/>
+        <CursorPos X="14" Y="133"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit122>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="41" Column="29" TopLine="9"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="111" Column="23" TopLine="92"/>
+      </Position3>
+      <Position4>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="224" Column="1" TopLine="213"/>
+      </Position4>
+      <Position5>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="60" Column="1" TopLine="23"/>
+      </Position5>
+      <Position6>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="232" Column="1" TopLine="223"/>
+      </Position6>
+      <Position7>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="276" Column="9" TopLine="247"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="272" Column="1" TopLine="234"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="184" Column="8" TopLine="152"/>
+      </Position10>
+      <Position11>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="186" Column="19" TopLine="154"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="191" Column="30" TopLine="159"/>
+      </Position12>
+      <Position13>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="218" Column="26" TopLine="186"/>
+      </Position13>
+      <Position14>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="228" Column="8" TopLine="196"/>
+      </Position14>
+      <Position15>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="241" Column="31" TopLine="209"/>
+      </Position15>
+      <Position16>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="276" Column="14" TopLine="244"/>
+      </Position16>
+      <Position17>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="277" Column="33" TopLine="245"/>
+      </Position17>
+      <Position18>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="282" Column="1" TopLine="247"/>
+      </Position18>
+      <Position19>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="50" Column="5" TopLine="43"/>
+      </Position19>
+      <Position20>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="179" Column="1" TopLine="142"/>
+      </Position20>
+      <Position21>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="293" Column="1" TopLine="256"/>
+      </Position21>
+      <Position22>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position22>
+      <Position23>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="227" Column="1" TopLine="218"/>
+      </Position23>
+      <Position24>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="273" Column="53" TopLine="257"/>
+      </Position24>
+      <Position25>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="109" Column="3" TopLine="77"/>
+      </Position25>
+      <Position26>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="41" Column="7" TopLine="5"/>
+      </Position26>
+      <Position27>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="114" Column="6" TopLine="99"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="239" Column="44" TopLine="219"/>
+      </Position28>
+      <Position29>
+        <Filename Value="../src/core/z_interface_win32.pas"/>
+        <Caret Line="33" Column="35" TopLine="26"/>
+      </Position29>
+      <Position30>
+        <Filename Value="../plugins/midi_syncdelay.pas"/>
+        <Caret Line="255" Column="5" TopLine="228"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <Target>
+      <Filename Value="../bin/zenith"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="../src;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="../src;../src/audio;../src/core;../src/ext;../src/gui;../src/lib;../src/plugin;../plugins"/>
+      <UnitOutputDirectory Value="units"/>
+    </SearchPaths>
+    <Parsing>
+      <Style Value="1"/>
+      <SyntaxOptions>
+        <CStyleMacros Value="True"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <TargetProcessor Value="pentium3"/>
+      <TargetCPU Value="i386"/>
+      <TargetOS Value="win32"/>
+    </CodeGeneration>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

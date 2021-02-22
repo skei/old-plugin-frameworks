@@ -1,0 +1,23 @@
+[clean]
+units = portaudio
+
+[package]
+name = portaudio
+version = 19
+
+[compiler]
+version = 1.2
+sourcedir = .
+unittargetdir= ./package/units/$(CPU_TARGET)-$(OS_TARGET)
+
+[target]
+units = portaudio
+programs = testpabasic testpasine
+
+[require]
+libc=y
+
+[install]
+fpcpackage=y
+
+[prerules]

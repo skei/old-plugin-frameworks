@@ -1,0 +1,19 @@
+04.feb.2012
+* fixed SStrrchr (missing pointer increase)
+* added SGetBaseName (s_basepath.pas)
+* improved widget redrawing
+  - redraw widget immediately to buffer in do_redraw, invalidate
+  - bitblt from buffer to screen in wm_paint
+  - low-priority wm_paint hopefully combining update rectangles
+* improved backbuffer resizing (power-of-two size)
+* improved buffer blitting (wm_paint, window dc, bitblt)
+* buffer redraw after open & resize
+* added fx_vumeter plugin
+* added SPaintMeter painter
+* fixed libtcc (missing cdecl's)
+
+06.feb 2012
+* split s_painter into separate files for each painter class
+* renamed SWidgetValue to SWidgetDrag
+* added SWidgetClick class
+* added SPaintButton class

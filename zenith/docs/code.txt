@@ -1,0 +1,104 @@
+[initial sketch]
+
+----------------------------------------------------------------------
+1. core
+----------------------------------------------------------------------
+
+   zenith.pas
+   (represents the dll, the static/global stuff)
+   
+   - zenith_global
+   
+     this is 'hidden' from user in the implementation section, but there
+     are several procedures/functions that gives some access..
+     
+     it is created in the initialization section of the unit, and
+     destroyed in finalization. so, before anything else is called,
+     our os/gui/plugin-specific objects can be created..
+     
+   - initialization
+       create zenith_global
+         creates platform
+         creates interface
+         creates format
+
+   - finalization
+       destroy zenith_global
+         destroys format
+         destroys interface
+         destroys platform
+
+   zenith_main.inc
+   (the main function, called by the host)
+   
+   - calls zenith_initialize
+       calls platform/interface/format.initialize
+       
+   - calls zenith_prepare
+       user can call register*()
+       
+   - calls zenith_main
+       calls format.entryPoint
+   
+   a. platform
+        os-init/factory
+
+      - initialize
+        called early, the first thing in host-call
+      - getBasePath
+        returns path to 'physical' exe/dll/so (not host)
+      
+   b. interface
+        gui-init/factory
+
+      - initialize
+        called early, the first thing in host-call
+          linux: xinitthreads
+          windows: register windows class
+      
+   c. format
+        plugin-init/factory
+
+      - initialize()  
+        called early, the first thing in host-call
+      
+      - entryPoint()
+        called from main entrypoint (from host), in zenith_main.inc
+        handled individually by each format
+          use registered descriptor/instance/editor class type
+          to actually create class..
+          these are initially set to default class types (ZDescriptor,
+          ZInstance, ZEditor), but user can change any of them by
+          calling the register*() functions in zenith_prepare (which is
+          called just before zenith_main)
+          
+          and, since zenith_prepare is called before zenith_main,
+          user can call register*() to set these class types.
+          
+      - register*()
+      
+          see above
+      
+----------------------------------------------------------------------
+2. plugin
+----------------------------------------------------------------------
+
+   a. descriptor
+   b. instance
+   c. editor
+   d. host
+   -  parameter
+
+----------------------------------------------------------------------
+3. gui
+----------------------------------------------------------------------
+
+   a. window
+   b. canvas
+   c. surface
+   d. image
+   -  widget [,container]
+   - painter [,renderer]
+   
+----------------------------------------------------------------------
+   

@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="build_win32"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <BuildNr Value="34"/>
+      <StringTable CompanyName="Tor-Helge Skei" ProductName="Sphaera" ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="2">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="build_win32"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir);..\src"/>
+            <OtherUnitFiles Value="..\src;..\ext;..\ext\pa;..\ext\vst;..\plugins;..\apps"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <Style Value="1"/>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <RelocatableUnit Value="True"/>
+            <TargetProcessor Value="pentium3"/>
+            <TargetCPU Value="i386"/>
+            <TargetOS Value="win32"/>
+            <Optimizations>
+              <VariablesInRegisters Value="True"/>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+          <Other>
+            <CompilerMessages>
+              <MsgFileName Value=""/>
+            </CompilerMessages>
+            <CompilerPath Value="$(CompPath)"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <Units Count="111">
+      <Unit0>
+        <Filename Value="build_win32.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="build_win32"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\src\s_editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_editor"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\src\s_host.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_host"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\src\s_parameter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_parameter"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\src\s_plugin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_plugin"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\src\s_program.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_program"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\src\s_widget.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\src\s_window.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_window"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\src\s_array.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_array"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\src\s_memory.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_memory"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\src\s_point.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_point"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\src\s_rect.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_rect"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\src\s_string.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_string"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\src\s_util.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_util"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\src\s_eventqueue.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_eventqueue"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\src\s_math.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_math"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\src\s_random.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_random"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\src\s_types.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_types"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\src\s_const.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_const"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\src\s_dsp_rbj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_rbj"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\src\s_pitchshift.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_pitchshift"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\src\s_libaam.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_libaam"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\src\s_library.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_library"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\src\s_libtcc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_libtcc"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\src\s_des.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_des"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="..\src\s_diffiehellman.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_diffiehellman"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\src\s_isaac.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_isaac"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\src\s_lzo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_lzo"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\src\s_color.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_color"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="..\src\s_console.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_console"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="..\src\s_inifile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_inifile"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\src\s_markov.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_markov"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\src\s_fft.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_fft"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\src\s_freeverb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_freeverb"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="..\src\s_rubberband.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_rubberband"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\src\s_module.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_module"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\plugins\fx_filter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_filter"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="..\src\s_basepath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_basepath"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="..\src\sphaera.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="..\src\sphaera_vst.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="..\plugins\fx_unmatched.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_unmatched"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="..\plugins\fx_transientcontroller.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_transientcontroller"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="..\plugins\fx_sonicmaximizer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_sonicmaximizer"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="..\plugins\fx_sonicenhancer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_sonicenhancer"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="..\plugins\fx_clipper.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_clipper"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="..\plugins\fx_tempodelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_tempodelay"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="..\plugins\fx_hallreverb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_hallreverb"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="..\plugins\fx_filter_rbj.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_filter_rbj"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="..\plugins\fx_pitchshift.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_pitchshift"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="..\plugins\midi_fibonacci.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_fibonacci"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="..\plugins\midi_transpose.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_transpose"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="..\plugins\fx_gain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_gain"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="..\plugins\fx_eventhorizon.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_eventhorizon"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="..\plugins\fx_tilteq.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_tilteq"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="..\plugins\midi_syncdelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="midi_syncdelay"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="..\plugins\fx_dynamic.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_dynamic"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="..\plugins\fx_dist3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_dist3"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="..\plugins\fx_fracdelay.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_fracdelay"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="..\plugins\fx_blur.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_blur"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="..\plugins\fx_grains.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_grains"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="..\src\sphaera_exe.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="..\src\s_application.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_application"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="..\plugins\fx_cutter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_cutter"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="..\plugins\fx_vumeter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_vumeter"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="..\src\s_surface.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_surface"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="..\src\s_canvas_cairo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_canvas_cairo"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="..\src\s_widget_button.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_button"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="..\apps\app_gui1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="app_gui1"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="..\src\s_widget_panel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_panel"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="..\src\s_widget_slider.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_slider"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="..\src\s_widget_image.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_image"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="..\src\s_widget_knob.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_knob"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="..\src\s_widget_image_knob.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_image_knob"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="..\src\s_widget_meter.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_meter"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="..\src\s_widget_wave.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_wave"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="..\src\s_widget_text.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_text"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="..\plugins\plug_test1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="plug_test1"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="..\src\s_lock.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_lock"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="..\plugins\plug_minimal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="plug_minimal"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="..\src\s_widget_value.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_widget_value"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="..\src\s_dsp_rc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_rc"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="..\src\s_dsp_dcf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_dcf"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="..\src\s_dsp_svf.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_svf"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="..\src\s_dsp_osc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_osc"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="..\src\s_dsp_env.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_env"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="..\apps\app_modular.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="app_modular"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="..\plugins\fx_resonantlowpass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_resonantlowpass"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="..\plugins\fx_applefilter12db.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_applefilter12db"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="..\plugins\fx_pitch.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_pitch"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="..\src\s_plugin_vst.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_plugin_vst"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="..\src\s_reaper_ext.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_reaper_ext"/>
+      </Unit90>
+      <Unit91>
+        <Filename Value="..\src\s_plugin_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_plugin_base"/>
+      </Unit91>
+      <Unit92>
+        <Filename Value="..\src\s_editor_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_editor_base"/>
+      </Unit92>
+      <Unit93>
+        <Filename Value="..\src\s_debug.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_debug"/>
+      </Unit93>
+      <Unit94>
+        <Filename Value="..\src\s_canvas_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_canvas_base"/>
+      </Unit94>
+      <Unit95>
+        <Filename Value="..\src\s_canvas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_canvas"/>
+      </Unit95>
+      <Unit96>
+        <Filename Value="..\src\s_list.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_list"/>
+      </Unit96>
+      <Unit97>
+        <Filename Value="..\src\s_voicemanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_voicemanager"/>
+      </Unit97>
+      <Unit98>
+        <Filename Value="..\src\s_thread.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_thread"/>
+      </Unit98>
+      <Unit99>
+        <Filename Value="..\src\s_quaternion.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_quaternion"/>
+      </Unit99>
+      <Unit100>
+        <Filename Value="..\src\s_wine.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_wine"/>
+      </Unit100>
+      <Unit101>
+        <Filename Value="..\src\s_dsp_interpolate.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_interpolate"/>
+      </Unit101>
+      <Unit102>
+        <Filename Value="..\src\s_dsp_onepole.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_onepole"/>
+      </Unit102>
+      <Unit103>
+        <Filename Value="..\src\s_dsp_rms.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_dsp_rms"/>
+      </Unit103>
+      <Unit104>
+        <Filename Value="..\plugins\fx_moog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fx_moog"/>
+      </Unit104>
+      <Unit105>
+        <Filename Value="..\src\s_surface_base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_surface_base"/>
+      </Unit105>
+      <Unit106>
+        <Filename Value="..\src\s_surface_cairo_win32.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_surface_cairo_win32"/>
+      </Unit106>
+      <Unit107>
+        <Filename Value="..\src\sphaera_all.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="sphaera_all"/>
+      </Unit107>
+      <Unit108>
+        <Filename Value="..\plugins\syn_poly.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="syn_poly"/>
+      </Unit108>
+      <Unit109>
+        <Filename Value="..\src\s_voice.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_voice"/>
+      </Unit109>
+      <Unit110>
+        <Filename Value="..\src\s_voice_simple1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="s_voice_simple1"/>
+      </Unit110>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="build_win32"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir);..\src"/>
+      <OtherUnitFiles Value="..\src;..\ext;..\ext\pa;..\ext\vst;..\plugins;..\apps"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <Style Value="1"/>
+    </Parsing>
+    <CodeGeneration>
+      <RelocatableUnit Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <MsgFileName Value=""/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

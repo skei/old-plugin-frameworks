@@ -1,0 +1,9 @@
+
+sphaera status update 30.jan.2012
+
+* plugin, parameter, program, editor
+* window, widget, painter
+* cairo, vst, libaam, libtcc
+* array, console, math, memory, point, rect, string
+* fft, filter_rbj, freeverb, pitchshift, rubberband
+* des, diffie-hellman, isaac, lzo, markov
